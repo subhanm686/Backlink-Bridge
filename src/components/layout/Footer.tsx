@@ -52,7 +52,7 @@ export default function Footer() {
     ],
     resources: [
       { name: "Blog", href: "/blog" },
-      { name: "Case Studies", href: "/case-studies" },
+      
       { name: "Free Site Audit", href: "/free-site-audit" },
       { name: "SEO Glossary", href: "/blog" },
       { name: "Anchor Text Guide", href: "/blog" },
@@ -93,9 +93,7 @@ export default function Footer() {
           </div>
           
           <div className="flex space-x-6 text-[15px]">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              Twitter / X
-            </a>
+            
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               LinkedIn
             </a>
