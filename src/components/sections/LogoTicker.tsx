@@ -11,8 +11,6 @@ export default function LogoTicker() {
     "Niche-Relevant",
     "Manual Outreach Only",
     "Real Editorial Sites",
-    "No PBNs Ever",
-    "E-E-A-T Compliant",
     "Permanent Placements"
   ]
 
