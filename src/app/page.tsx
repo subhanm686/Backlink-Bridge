@@ -7,7 +7,7 @@ import ServicesTab from '@/components/sections/ServicesTab'
 import InnovationTabs from '@/components/sections/InnovationTabs'
 import NicheGrid from '@/components/sections/NicheGrid'
 import HowItWorks from '@/components/sections/HowItWorks'
-import CaseStudies from '@/components/sections/CaseStudies'
+
 import TrustSection from '@/components/sections/TrustSection'
 import StatsBanner from '@/components/sections/StatsBanner'
 import BlogPreview from '@/components/sections/BlogPreview'
@@ -73,7 +73,7 @@ export default function Home() {
         <InnovationTabs />
         <NicheGrid />
         <HowItWorks />
-        <CaseStudies />
+    
         <TrustSection />
         <StatsBanner />
         <BlogPreview />
