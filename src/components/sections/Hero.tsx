@@ -70,7 +70,6 @@ export default function Hero() {
             variants={fadeUpVariant}
             className="mt-8 text-sm font-semibold tracking-wide text-slate-300 uppercase"
           >
-            Trusted by 1,200+ websites across 25+ niches worldwide
           </motion.p>
         </motion.div>
       </div>
