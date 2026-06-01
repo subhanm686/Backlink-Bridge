@@ -54,7 +54,7 @@ export default function Footer() {
       { name: "Blog", href: "/blog" },
       
       { name: "Free Site Audit", href: "/free-site-audit" },
-      { name: "SEO Glossary", href: "/blog" },
+     
       { name: "Anchor Text Guide", href: "/blog" },
       { name: "DR vs DA Explained", href: "/blog" }
     ],
