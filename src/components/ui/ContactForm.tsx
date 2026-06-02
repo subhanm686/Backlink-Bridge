@@ -25,17 +25,32 @@ export default function ContactForm() {
     }
   })
 
-  const onSubmit = async (data: ContactInputs) => {
-    try {
-      setSubmitError(null)
-      // Simulate API submit
-      await new Promise((resolve) => setTimeout(resolve, 1200))
-      console.log("Contact form details submitted:", data)
+const onSubmit = async (data: ContactInputs) => {
+  try {
+    setSubmitError(null)
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        access_key: "0677421c-40ff-4a83-918e-3b169f1f3a12", // ← paste your key
+        name: data.name,
+        email: data.email,
+        website: data.websiteUrl,
+        services: data.servicesNeeded.join(", "),
+        message: data.message,
+      }),
+    })
+    const result = await response.json()
+    if (result.success) {
       setIsSuccess(true)
       reset()
-    } catch {
+    } else {
       setSubmitError("Something went wrong. Please try again.")
     }
+  } catch {
+    setSubmitError("Something went wrong. Please try again.")
+  }
+}
   }
 
   if (isSuccess) {
