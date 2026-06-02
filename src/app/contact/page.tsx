@@ -18,7 +18,7 @@ export default function ContactPage() {
     "url": "https://backlinkbridge.com/contact",
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "subhan@backlinkbridge.com",
+      "email": "contact@backlinkbridge.com",
       "contactType": "customer service"
     }
   }
