@@ -51,8 +51,6 @@ const onSubmit = async (data: ContactInputs) => {
     setSubmitError("Something went wrong. Please try again.")
   }
 }
-  }
-
   if (isSuccess) {
     return (
       <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-8 text-center">
