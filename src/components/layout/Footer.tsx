@@ -86,8 +86,8 @@ export default function Footer() {
                 Contact Us
               </Link>
               <span className="text-white/20 hidden sm:inline">|</span>
-              <a href="mailto:subhan@backlinkbridge.com" className="text-slate-300 hover:text-white transition-colors font-medium">
-                subhan@backlinkbridge.com
+              <a href="mailto:contact@backlinkbridge.com" className="text-slate-300 hover:text-white transition-colors font-medium">
+                contact@backlinkbridge.com
               </a>
             </div>
           </div>
