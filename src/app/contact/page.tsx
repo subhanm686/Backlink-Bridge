@@ -56,10 +56,10 @@ export default function ContactPage() {
               <div className="bg-white border border-border p-6 rounded-xl shadow-sm">
                 <span className="text-navy font-bold uppercase tracking-wider text-xs block mb-2">Direct Contact</span>
                 <a 
-                  href="mailto:subhan@backlinkbridge.com" 
+                  href="mailto:contact@backlinkbridge.com" 
                   className="text-lg font-bold text-primary hover:underline"
                 >
-                  subhan@backlinkbridge.com
+                  contact@backlinkbridge.com
                 </a>
                 <p className="text-xs text-slate-400 font-semibold mt-1 uppercase">Response guarantee: Under 24 hours</p>
               </div>
