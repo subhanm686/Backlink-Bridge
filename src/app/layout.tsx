@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Backlink Bridge | High-Authority Link Building & Guest Posting",
-  description: "...",
+  description: "Backlink Bridge is a done-for-you link building service that manually sources, vets, and places your content on real, high-authority websites across 25+ niches.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
