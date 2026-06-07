@@ -19,9 +19,19 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Backlink Bridge',
-  description: 'Professional guest posting and high-authority link building campaigns.',
-}
+  title: "Backlink Bridge | High-Authority Link Building & Guest Posting",
+  description: "...",
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({
   children,
