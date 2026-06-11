@@ -5,7 +5,7 @@ import Script from 'next/script'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import './globals.css'
-import { OrganizationSchema, ServiceSchema } from "@/components/SchemaMarkup";
+import { OrganizationSchema, ServiceSchema, FAQSchema } from '@/components/SchemaMarkup'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,9 +42,10 @@ export default function RootLayout({
   return (
   <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
   <head>
-    <OrganizationSchema />
-    <ServiceSchema />
-  </head>
+   <OrganizationSchema />
+          <ServiceSchema />
+          <FAQSchema />
+        </head>
       <body className="bg-white antialiased text-slate-600 font-sans">
         {/* Future Phase: Crisp or Intercom Live Chat Script (Placeholder) */}
         <Script
