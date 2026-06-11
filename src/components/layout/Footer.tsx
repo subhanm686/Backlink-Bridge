@@ -50,13 +50,13 @@ export default function Footer() {
       { name: "Education", href: "/niches?filter=education" },
       { name: "View All 25+ Niches →", href: "/niches", isHighlight: true }
     ],
-    resources: [
-      { name: "Blog", href: "/blog" },
-      
-      { name: "Free Site Audit", href: "/free-site-audit" },
-     
-      { name: "Anchor Text Guide", href: "/blog" },
-      { name: "DR vs DA Explained", href: "/blog" }
+   resources: [
+  { name: "Blog", href: "/blog" },
+  { name: "Free Site Audit", href: "/free-site-audit" },
+  { name: "SEO Glossary", href: "/seo-glossary" },
+  { name: "Anchor Text Guide", href: "/anchor-text-guide" },
+  { name: "DR vs DA Explained", href: "/dr-vs-da" }
+
     ],
     company: [
       { name: "About Us", href: "/about" },
