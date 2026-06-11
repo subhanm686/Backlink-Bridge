@@ -61,7 +61,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
-(blank)
+</html>
   )
 }
-fix: remove duplicate closing tags in layout.tsx
+
