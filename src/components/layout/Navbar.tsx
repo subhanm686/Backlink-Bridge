@@ -76,7 +76,7 @@ export default function Navbar() {
   const resources = [
     { name: "Blog", href: "/blog" },
     { name: "Free Site Audit", href: "/free-site-audit" },
-    { name: "SEO Glossary", href: "/blog" },
+  { name: "SEO Glossary", href: "/seo-glossary" },
     { name: "Anchor Text Guide", href: "/anchor-text-guide" },
 { name: "DR vs DA Explained", href: "/dr-vs-da" }
   ]
