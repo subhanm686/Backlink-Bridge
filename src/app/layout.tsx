@@ -62,7 +62,9 @@ export default function RootLayout({
         <Footer />
       </body>
 
-    feat: add OrganizationSchema and ServiceSchema to layout head
+    </body>
     </html>
+  )
+}
   )
 }
