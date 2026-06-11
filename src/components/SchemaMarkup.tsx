@@ -4,16 +4,18 @@ export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "BacklinkBridge",
+    "name": "Backlink Bridge",
     "url": "https://backlinkbridge.com",
     "logo": "https://backlinkbridge.com/logo.png",
     "description": "BacklinkBridge is an off-page SEO and link-building agency offering backlink building, DR/DA improvement, spam score reduction, and guest posting services.",
     "email": "contact@backlinkbridge.com",
     "address": {
-      "@type": "3000",
-      "addressRegion": "Melbourne,Victoria",
-      "addressCountry": "AU"
-    },
+            "@type": "PostalAddress",
+            "addressLocality": "Melbourne",
+            "addressRegion": "Victoria",
+            "postalCode": "3000",
+            "addressCountry": "AU"
+          },
     "sameAs": [
       "https://www.linkedin.com/company/backlinkbridge",
       "https://www.facebook.com/backlinkbridge"
