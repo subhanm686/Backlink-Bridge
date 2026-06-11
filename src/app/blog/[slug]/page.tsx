@@ -9,6 +9,7 @@ import BottomCTA from '@/components/sections/BottomCTA'
 import { BLOG_POSTS } from '@/lib/constants'
 import { constructMetadata } from '@/lib/metadata'
 import { getUnsplashUrl } from '@/lib/utils'
+import AuthorBio from '@/components/AuthorBio'
 
 interface PageProps {
   params: {
@@ -51,10 +52,11 @@ export default function BlogPostDetailPage({ params }: PageProps) {
     "description": post.excerpt,
     "image": getUnsplashUrl(post.unsplash, 800, 450),
     "datePublished": new Date(post.date).toISOString(),
-    "author": {
-      "@type": "Organization",
-      "name": "Backlink Bridge"
-    },
+   "author": {
+            "@type": "Person",
+            "name": "Muhammad Subhan",
+            "url": "https://backlinkbridge.com/about"
+          },
     "publisher": {
       "@type": "Organization",
       "name": "Backlink Bridge",
@@ -135,6 +137,8 @@ export default function BlogPostDetailPage({ params }: PageProps) {
               To maintain search compliance, you must ensure that your anchor text distribution looks natural. A healthy backlink profile should feature a mix of branded anchors, naked URLs, and contextually matching phrases. Over-optimizing exact-match keywords in your anchor profiles is the fastest way to trigger search filters. Maintain a natural velocity, write valuable human copy, and secure placements on real domains. That is how you build links that move the needle.
             </p>
           </div>
+
+            <AuthorBio />
 
           <div className="mt-12 pt-8 border-t border-border flex justify-between items-center">
             <Link href="/blog" className="text-[15px] font-bold text-primary hover:underline">
