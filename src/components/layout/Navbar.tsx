@@ -77,8 +77,8 @@ export default function Navbar() {
     { name: "Blog", href: "/blog" },
     { name: "Free Site Audit", href: "/free-site-audit" },
     { name: "SEO Glossary", href: "/blog" },
-    { name: "Anchor Text Guide", href: "/blog" },
-    { name: "DR vs DA Explained", href: "/blog" }
+    { name: "Anchor Text Guide", href: "/anchor-text-guide" },
+{ name: "DR vs DA Explained", href: "/dr-vs-da" }
   ]
 
   const company = [
