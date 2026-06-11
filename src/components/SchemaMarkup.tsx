@@ -10,8 +10,8 @@ export function OrganizationSchema() {
     "description": "BacklinkBridge is an off-page SEO and link-building agency offering backlink building, DR/DA improvement, spam score reduction, and guest posting services.",
     "email": "contact@backlinkbridge.com",
     "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Tasmania",
+      "@type": "3000",
+      "addressRegion": "Melbourne,Victoria",
       "addressCountry": "AU"
     },
     "sameAs": [
