@@ -94,10 +94,10 @@ export default function Footer() {
           
           <div className="flex space-x-6 text-[15px]">
             
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+           <a href="https://www.linkedin.com/company/backlink-bridge/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               LinkedIn
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61590615572279" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Facebook
             </a>
           </div>
