@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import Badge from '@/components/ui/Badge'
 import Card from '@/components/ui/Card'
@@ -143,6 +144,68 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+        {/* Founder & Team Section */}
+        <section className="py-24 border-t border-border">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <Badge variant="primary">Our Team</Badge>
+              <h2 className="text-3xl font-bold font-display text-navy mt-4">
+                The People Behind Backlink Bridge
+              </h2>
+              <p className="mt-4 text-[16px] text-slate-500 font-medium">
+                Built by SEO practitioners who have done the outreach, written the content, and earned the links themselves.
+              </p>
+            </div>
+
+            <div className="flex flex-col md:flex-row gap-8 items-start bg-slate-50 border border-slate-200 rounded-2xl p-8">
+              <div className="flex-shrink-0 w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-2xl" style={{ backgroundColor: '#0f2444' }}>
+                MS
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-navy mb-1">Muhammad Subhan</h3>
+                <p className="text-sm font-semibold mb-4" style={{ color: '#1d6fb8' }}>
+                  Founder &amp; SEO Consultant · Backlink Bridge
+                </p>
+                <p className="text-[15px] text-slate-600 leading-relaxed mb-4">
+                  Muhammad Subhan is the founder of Backlink Bridge and an SEO consultant
+                  with 5+ years of hands-on experience in off-page SEO and link building.
+                  He specialises in manual blogger outreach, guest posting campaigns, and
+                  building high-authority backlink profiles that measurably improve Domain
+                  Rating (DR), Domain Authority (DA), and organic search visibility. His
+                  work spans 25+ industries — including finance, technology, health, real
+                  estate, and e-commerce — helping websites reduce Moz spam score, recover
+                  from Google penalties, disavow toxic backlinks, and achieve sustainable
+                  organic traffic growth through white-hat, editorial-grade link placements.
+                  As an SEO consultant, Subhan advises clients on full off-page strategy:
+                  anchor text diversification, link velocity, niche relevance, and long-term
+                  DR improvement roadmaps.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {['Off-Page SEO', 'Link Building', 'Guest Posting', 'DR/DA Improvement', 'Spam Score Cleanup', 'Blogger Outreach', 'Anchor Text Strategy', 'Organic Growth'].map((skill) => (
+                    <span key={skill} className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+                <Link
+                  href="https://www.linkedin.com/company/backlink-bridge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-white px-4 py-2 rounded-lg transition-colors"
+                  style={{ backgroundColor: '#0a66c2' }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  Follow Backlink Bridge on LinkedIn
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Bottom CTA */}
 
       {/* Bottom CTA */}
       <BottomCTA />
