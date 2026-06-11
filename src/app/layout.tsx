@@ -40,7 +40,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+  <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+  <head>
+    <OrganizationSchema />
+    <ServiceSchema />
+  </head>
       <body className="bg-white antialiased text-slate-600 font-sans">
         {/* Future Phase: Crisp or Intercom Live Chat Script (Placeholder) */}
         <Script
@@ -57,6 +61,8 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+
+    feat: add OrganizationSchema and ServiceSchema to layout head
     </html>
   )
 }
