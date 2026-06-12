@@ -15,7 +15,7 @@ import BottomCTA from '@/components/sections/BottomCTA'
 import { constructMetadata, getOrganizationSchema } from '@/lib/metadata'
 
 export const metadata = constructMetadata({
-  title: "Backlink Bridge | High-Authority Link Building & Guest Posting Services",
+  title: "Link Building Service & Guest Posting Agency | Backlink Bridge",
   description: "Connect to high-authority, niche-relevant publishers. Backlink Bridge improves your DR, DA, organic traffic, and keywords rankings with human blogger outreach.",
   canonicalUrl: "https://backlinkbridge.com"
 })
