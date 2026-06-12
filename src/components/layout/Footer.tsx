@@ -214,9 +214,9 @@ export default function Footer() {
             © 2025 Backlink Bridge. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <Link href="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/contact" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="/contact" className="hover:text-white transition-colors">Refund Policy</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/refund">Refund Policy</Link>
           </div>
         </div>
 
