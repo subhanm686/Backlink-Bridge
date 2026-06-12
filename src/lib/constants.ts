@@ -77,8 +77,8 @@ export const SERVICES: Service[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-1",
-    slug: "improve-domain-rating-2025",
-    title: "What Is Domain Rating and How to Improve It in 2025",
+    slug: "slug: "improve-domain-rating-2026",",
+    title: "What Is Domain Rating and How to Improve It in 2026",
     excerpt: "Domain Rating is Ahrefs' measure of your backlink profile strength on a 0–100 scale. Here is exactly how to move it.",
     tag: "DR & DA",
     readTime: "8 min read",
@@ -97,8 +97,8 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: "blog-3",
-    slug: "reduce-spam-score-guide",
-    title: "How to Reduce Spam Score: Complete 2025 Guide",
+    slug: "reduce-spam-score-guide-2026",
+    title: "How to Reduce Spam Score: Complete 2026 Guide",
     excerpt: "A high Moz Spam Score can suppress your rankings even with great content. Here is the step-by-step process to clean it up.",
     tag: "SEO Health",
     readTime: "10 min read",
