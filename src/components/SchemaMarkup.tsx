@@ -17,10 +17,10 @@ export function OrganizationSchema() {
             "addressCountry": "AU"
           },
     "sameAs": [
-      "https://www.linkedin.com/company/backlinkbridge",
-      "https://www.facebook.com/backlinkbridge"
+      "https://www.linkedin.com/company/backlink-bridge/",
+      "https://www.facebook.com/profile.php?id=61590615572279"
     ],
-    "foundingDate": "2024",
+    "foundingDate": "2021",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
       "minValue": 1,
