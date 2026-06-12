@@ -81,12 +81,14 @@ export default function Navbar() {
 { name: "DR vs DA Explained", href: "/dr-vs-da" }
   ]
 
-  const company = [
-    { name: "About Us", href: "/about" },
-    { name: "Contact Us", href: "/contact" },
-    { name: "Partner With Us", href: "/contact" },
-    { name: "Affiliate Program", href: "/contact" }
-  ]
+ const company = [
+  { name: "About Us", href: "/about" },
+  { name: "Case Studies", href: "/case-studies" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "Contact Us", href: "/contact" },
+  { name: "Partner With Us", href: "/contact" },
+  { name: "Affiliate Program", href: "/contact" }
+]
 
   return (
     <>
@@ -342,13 +344,27 @@ export default function Navbar() {
             </div>
 
             <Link 
-              href="/how-it-works" 
-              className="text-lg font-semibold text-navy pb-2 border-b border-surface"
-            >
-              How It Works
-            </Link>
+  href="/how-it-works" 
+  className="text-lg font-semibold text-navy pb-2 border-b border-surface"
+>
+  How It Works
+</Link>
 
-            {/* Merged Resources & Company Mobile */}
+<Link 
+  href="/pricing" 
+  className="text-lg font-semibold text-navy pb-2 border-b border-surface"
+>
+  Pricing
+</Link>
+
+<Link 
+  href="/case-studies" 
+  className="text-lg font-semibold text-navy pb-2 border-b border-surface"
+>
+  Case Studies
+</Link>
+
+{/* Merged Resources & Company Mobile */}
             <div>
               <button 
                 onClick={() => toggleDropdown('resourcesAndCompany')}
