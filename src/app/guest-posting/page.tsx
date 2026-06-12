@@ -10,8 +10,8 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "Professional Guest Posting Service | Backlink Bridge",
-  description: "Get permanent, contextual, dofollow links on real traffic-verified websites. 100% human-written content and manual blogger outreach.",
+  title: "Guest Posting Service — DR 30–80+ Placements | Backlink Bridge",
+description: "Buy guest posts on real DR 30–80+ websites in your niche. Human-written 800–1,200 word articles, permanent dofollow links, full draft approval. Free site audit included.",
   canonicalUrl: "https://backlinkbridge.com/guest-posting"
 })
 
@@ -43,7 +43,7 @@ export default function GuestPostingPage() {
 
   const serviceSchema = getServiceSchema(
     "Backlink Bridge Guest Posting Service",
-    "High-quality editorial guest posting service on traffic-verified publisher sites.",
+     Professional Guest Posting Service
     "/guest-posting"
   )
 
@@ -76,7 +76,7 @@ export default function GuestPostingPage() {
               High-Authority Guest Posting on Real Editorial Websites.
             </h1>
             <p className="text-[18px] md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Permanent contextual links placed inside human-written, editorial-grade articles on niche-relevant websites.
+            Permanent contextual dofollow links placed inside human-written, editorial-grade articles on niche-relevant websites with real traffic and DR 30–80+.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Button href="/contact" variant="primary" size="lg" className="w-full sm:w-auto">
