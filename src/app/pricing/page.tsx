@@ -8,7 +8,7 @@ import { constructMetadata, getFAQSchema } from '@/lib/metadata'
 
 export const metadata = constructMetadata({
   title: "Link Building Pricing & Packages 2026 | Backlink Bridge",
-  description: "Transparent link building pricing for every budget. Guest posting packages from $499/mo. Per-link pricing on DR 30–80+ sites. No contracts. Free site audit included.",
+  description: "Transparent link building pricing for every budget. Guest posting packages from $199/mo. Per-link pricing on DR 30–80+ sites. No contracts. Free site audit included.",
   canonicalUrl: "https://backlinkbridge.com/pricing"
 })
 
@@ -16,7 +16,7 @@ const MONTHLY_PLANS = [
   {
     name: "Starter",
     badge: null,
-    price: 499,
+    price: 199,
     description: "For new sites and small businesses building their first backlink foundation.",
     links: 5,
     drRange: "DR 30–50",
@@ -44,7 +44,7 @@ const MONTHLY_PLANS = [
   {
     name: "Growth",
     badge: "Most Popular",
-    price: 999,
+    price: 400,
     description: "For established sites ready to move rankings and hit DR 50+ within 6 months.",
     links: 10,
     drRange: "DR 40–65",
@@ -71,7 +71,7 @@ const MONTHLY_PLANS = [
   {
     name: "Authority",
     badge: null,
-    price: 1999,
+    price: 1000,
     description: "For competitive niches and brands that need dominant DR 60+ authority fast.",
     links: 20,
     drRange: "DR 50–80+",
