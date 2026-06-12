@@ -44,7 +44,7 @@ export default function Hero() {
             variants={fadeUpVariant}
             className="text-[44px] md:text-6xl font-extrabold text-white font-display leading-[1.1] tracking-tight"
           >
-            Your Rankings Deserve Better Backlinks.
+            Professional Link Building Service &amp; Guest Posting Agency
           </motion.h1>
 
           <motion.p 
