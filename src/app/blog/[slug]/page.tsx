@@ -43,7 +43,7 @@ export default function BlogPostDetailPage({ params }: PageProps) {
   if (!post) {
     notFound()
     const content = getBlogContent(params.slug)
-  const _readTime = content?.readTime ?? post.readTime
+
   }
 
   // Schema markup
@@ -93,7 +93,7 @@ export default function BlogPostDetailPage({ params }: PageProps) {
             <div className="flex items-center gap-6 text-[14px] text-slate-400 font-semibold uppercase tracking-wider">
               <span>Published: {post.date}</span>
               <span>•</span>
-              <span>Read time: {_readTime}</span>
+              <span>Read time: {post.readTime}</span>
             </div>
           </div>
         </section>
