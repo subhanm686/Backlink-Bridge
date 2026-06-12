@@ -41,9 +41,9 @@ export default function GuestPostingPage() {
 
 
 
-  const serviceSchema = getServiceSchema(
+ const serviceSchema = getServiceSchema(
     "Backlink Bridge Guest Posting Service",
-     Professional Guest Posting Service
+    "High-quality editorial guest posting service on traffic-verified publisher sites.",
     "/guest-posting"
   )
 
