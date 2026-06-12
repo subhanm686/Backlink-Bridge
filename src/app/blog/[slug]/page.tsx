@@ -10,7 +10,7 @@ import { BLOG_POSTS } from '@/lib/constants'
 import { constructMetadata } from '@/lib/metadata'
 import { getUnsplashUrl } from '@/lib/utils'
 import AuthorBio from '@/components/AuthorBio'
-
+import { getBlogContent } from '@/lib/blogContent'
 interface PageProps {
   params: {
     slug: string
@@ -42,6 +42,8 @@ export default function BlogPostDetailPage({ params }: PageProps) {
   
   if (!post) {
     notFound()
+    const content = getBlogContent(params.slug)
+  const readTime = content?.readTime ?? post.readTime
   }
 
   // Schema markup
@@ -91,7 +93,7 @@ export default function BlogPostDetailPage({ params }: PageProps) {
             <div className="flex items-center gap-6 text-[14px] text-slate-400 font-semibold uppercase tracking-wider">
               <span>Published: {post.date}</span>
               <span>•</span>
-              <span>Read time: {post.readTime}</span>
+              <span>Read time: {readTime}</span>
             </div>
           </div>
         </section>
@@ -110,34 +112,14 @@ export default function BlogPostDetailPage({ params }: PageProps) {
             />
           </div>
 
-          {/* Realistic Content Paragraphs */}
-          <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed font-medium space-y-6 text-[16px] md:text-[17px]">
-            <p className="font-semibold text-navy text-lg leading-relaxed">
-              {post.excerpt}
-            </p>
-            <p>
-              Link building remains one of the single most important ranking signals for modern search engine algorithms. In fact, Google has explicitly confirmed that backlinks are in their top three search factors. However, the days of scaling link profiles through automation and spam comments are long gone. Today, securing ranking stability requires a focus on publisher authority, relevance, and natural link velocity.
-            </p>
-            
-            <h2 className="text-2xl font-bold text-navy font-display pt-4">Understanding Quality Over Volume</h2>
-            <p>
-              Many marketers make the mistake of focusing strictly on the quantity of backlink placements. They buy packages of 100 links from cheap databases, only to find their keywords drops and spam score rise. The explanation is simple: search crawlers analyze the inbound link profile of target pages. A link on a site with zero organic traffic, poor content quality, or heavy outbound ratios carries no authority transfer.
-            </p>
-            <p>
-              In contrast, securing a single placement on an active, traffic-verified site in your exact industry can move your rankings significantly. These links transfer genuine domain power because Google crawls the host page frequently.
-            </p>
-
-            <h2 className="text-2xl font-bold text-navy font-display pt-4">How to Assess Publisher Genuineness</h2>
-            <p>
-              When auditing potential blogger outreach targets, our editorial relations team looks at several metrics. Firstly, we check Domain Rating (DR) to baseline authority. Secondly, we verify that the site has active organic keywords and monthly traffic. If a domain has a DR of 60 but has less than 100 organic search visitors a month, it is highly likely that the domain is a link farm. Finally, we analyze the content: is it written by real editors? Does it contain real value? If yes, the placement is safe.
-            </p>
-
-            <h2 className="text-2xl font-bold text-navy font-display pt-4">Building a Sustainable Strategy</h2>
-            <p>
-              To maintain search compliance, you must ensure that your anchor text distribution looks natural. A healthy backlink profile should feature a mix of branded anchors, naked URLs, and contextually matching phrases. Over-optimizing exact-match keywords in your anchor profiles is the fastest way to trigger search filters. Maintain a natural velocity, write valuable human copy, and secure placements on real domains. That is how you build links that move the needle.
-            </p>
-          </div>
-
+          {/* Article Content — unique per post */}
+<div className="prose prose-slate max-w-none text-slate-600 leading-relaxed font-medium space-y-6 text-[16px] md:text-[17px]">
+  {content?.sections ?? (
+    <p className="font-semibold text-navy text-lg leading-relaxed">
+      {post.excerpt}
+    </p>
+  )}
+</div>
             <AuthorBio />
 
           <div className="mt-12 pt-8 border-t border-border flex justify-between items-center">
