@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: "blog-1",
-    slug: "slug: "improve-domain-rating-2026",",
+    slug: "improve-domain-rating-2026",
     title: "What Is Domain Rating and How to Improve It in 2026",
     excerpt: "Domain Rating is Ahrefs' measure of your backlink profile strength on a 0–100 scale. Here is exactly how to move it.",
     tag: "DR & DA",
