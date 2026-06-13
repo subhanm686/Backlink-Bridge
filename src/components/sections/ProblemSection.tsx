@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Card from '../ui/Card'
 import Badge from '../ui/Badge'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 24 },
@@ -24,17 +24,17 @@ const containerVariant = {
 export default function ProblemSection() {
   const problems = [
     {
-      photo: "frustrated marketer laptop office stressed",
+      photo: "/dr-stuck-analytics.jpg",
       title: "Your DR Is Stuck.",
       body: "Generic link farms and PBN networks are poisoning your domain authority instead of building it. Google can spot them — and so can we."
     },
     {
-      photo: "analytics graph decline business",
+     photo: "/spam-score-laptop.jpg",
       title: "Spam Score Climbing.",
       body: "Low-quality backlinks trigger algorithmic penalties and destroy years of hard-won rankings overnight. You need a cleanup, not more of the same."
     },
     {
-      photo: "google search results phone",
+      photo: "/traffic-stalled-dashboard.jpg",
       title: "Organic Traffic Stalled.",
       body: "Without niche-relevant, high-authority backlinks, your content never reaches page one — regardless of how well it is written or optimized."
     }
@@ -65,7 +65,7 @@ export default function ProblemSection() {
               <Card className="flex flex-col h-full bg-white" hoverEffect={true}>
                 <div className="relative h-[240px] w-full bg-slate-100">
                   <Image
-                    src={getUnsplashUrl(prob.photo, 400, 240)}
+                    src={prob.photo}
                     alt={prob.title}
                     fill
                     sizes="(max-w-7xl) 33vw, 100vw"
