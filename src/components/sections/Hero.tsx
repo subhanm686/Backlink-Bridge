@@ -20,7 +20,7 @@ const containerVariant = {
 }
 
 export default function Hero() {
-  const bgImage = getUnsplashUrl("modern office building skyline dusk", 1920, 1080)
+ const bgImage = "/hero-team-office.jpg"
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center py-32 overflow-hidden bg-navy">
