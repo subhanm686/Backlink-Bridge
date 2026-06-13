@@ -43,7 +43,7 @@ export function ServiceSchema() {
     "name": "Link Building & Guest Posting Services",
     "provider": {
       "@type": "Organization",
-      "name": "BacklinkBridge",
+      "name": "Backlink Bridge",
       "url": "https://backlinkbridge.com"
     },
     "serviceType": "SEO Link Building",
