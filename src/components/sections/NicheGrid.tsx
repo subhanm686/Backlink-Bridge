@@ -53,7 +53,7 @@ export default function NicheGrid() {
               <NicheCard
                 name={niche.name}
                 slug={niche.slug}
-                unsplashQuery={niche.unsplash}
+               image={niche.image}
               />
             </motion.div>
           ))}
