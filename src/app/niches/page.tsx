@@ -8,7 +8,7 @@ import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import BottomCTA from '@/components/sections/BottomCTA'
 import { NICHES } from '@/lib/constants'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 // Helper to map niches to categories
 function getNicheCategory(slug: string): string {
@@ -91,7 +91,7 @@ function NichesContent() {
             <Card key={niche.id} className="flex flex-col h-full bg-white">
               <div className="relative h-[180px] w-full bg-slate-100">
                 <Image
-                  src={getUnsplashUrl(niche.unsplash, 320, 180)}
+                  src={niche.image}
                   alt={`Blogger outreach publisher sites for ${niche.name}`}
                   fill
                   sizes="(max-w-7xl) 25vw, 50vw"
