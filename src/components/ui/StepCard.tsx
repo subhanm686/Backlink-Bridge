@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from './Card'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 interface StepCardProps {
   number: string
   title: string
   body: string
-  unsplashQuery: string
+  image: string
 }
 
-export default function StepCard({ number, title, body, unsplashQuery }: StepCardProps) {
-  const imageUrl = getUnsplashUrl(unsplashQuery, 400, 200)
+export default function StepCard({ number, title, body, image }: StepCardProps) {
+  const imageUrl = image
 
   return (
     <Card className="flex flex-col h-full bg-white border border-border" hoverEffect={true}>
