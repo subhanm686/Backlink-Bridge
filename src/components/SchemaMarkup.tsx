@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     "name": "Backlink Bridge",
     "url": "https://backlinkbridge.com",
     "logo": "https://backlinkbridge.com/logo.png",
-    "description": "BacklinkBridge is an off-page SEO and link-building agency offering backlink building, DR/DA improvement, spam score reduction, and guest posting services.",
+    "description": "Backlink Bridge is an off-page SEO and link-building agency offering backlink building, DR/DA improvement, spam score reduction, and guest posting services.",
     "email": "contact@backlinkbridge.com",
     "address": {
             "@type": "PostalAddress",
