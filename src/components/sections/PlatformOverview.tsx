@@ -14,7 +14,7 @@ const fadeUpVariant = {
 }
 
 export default function PlatformOverview() {
-  "/team-workspace.jpg"
+  const teamImage = "/team-workspace.jpg"
 
   return (
     <section className="bg-surface py-24 border-b border-border">
@@ -72,7 +72,7 @@ export default function PlatformOverview() {
             className="relative h-[400px] sm:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg bg-slate-100"
           >
             <Image
-              src={imageUrl}
+              src={teamImage}
               alt="Editorial team collaborating on quality publisher guest posting campaign"
               fill
               sizes="(max-w-7xl) 50vw, 100vw"
