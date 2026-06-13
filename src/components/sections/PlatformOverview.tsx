@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Button from '../ui/Button'
 import Badge from '../ui/Badge'
-import { getUnsplashUrl } from '@/lib/utils'
+
 import { STATS } from '@/lib/constants'
 
 const fadeUpVariant = {
@@ -14,7 +14,7 @@ const fadeUpVariant = {
 }
 
 export default function PlatformOverview() {
-  const imageUrl = getUnsplashUrl("editorial team collaboration office professional", 600, 500)
+  "/team-workspace.jpg"
 
   return (
     <section className="bg-surface py-24 border-b border-border">
