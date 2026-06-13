@@ -74,6 +74,7 @@ export default function HowItWorks() {
                 title={step.title}
                 body={step.body}
                image={step.photo}
+                
               />
             </motion.div>
           ))}
