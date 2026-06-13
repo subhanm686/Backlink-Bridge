@@ -25,25 +25,25 @@ export default function HowItWorks() {
       number: "01",
       title: "Share Your Goals",
       body: "Tell us your niche, target DR, preferred anchor texts, and monthly link budget. Our onboarding form takes under five minutes to complete.",
-      photo: "person laptop form website professional"
+     photo: "/step-1-goals.jpg"
     },
     {
       number: "02",
       title: "We Source and Vet Publishers",
       body: "Our team manually identifies real, traffic-verified websites that match your niche and authority targets. Every site passes our 12-point quality checklist.",
-      photo: "research team reviewing data spreadsheet"
+      photo: "/step-2-vetting.jpg"
     },
     {
       number: "03",
       title: "Content Creation and Outreach",
       body: "We write editorial-grade content and pitch it to publishers. You receive a draft for approval before any article is submitted to a publisher.",
-      photo: "writer working desk coffee writing professional"
+      photo: "/step-3-content.jpg"
     },
     {
       number: "04",
       title: "Links Go Live. Rankings Improve.",
       body: "Your links are placed, indexed, and logged in your live report. Watch your DR, DA, and keyword rankings improve over the following 60 to 90 days.",
-      photo: "analytics dashboard monitor growth results"
+      photo: "/step-4-results.jpg"
     }
   ]
 
@@ -73,7 +73,7 @@ export default function HowItWorks() {
                 number={step.number}
                 title={step.title}
                 body={step.body}
-                unsplashQuery={step.photo}
+               image={step.photo}
               />
             </motion.div>
           ))}
