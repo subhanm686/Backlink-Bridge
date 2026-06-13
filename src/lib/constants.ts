@@ -2,7 +2,7 @@ export interface Niche {
   id: number
   name: string
   slug: string
-  unsplash: string
+  image: string
 }
 
 export interface Stat {
@@ -28,17 +28,17 @@ export interface BlogPost {
 }
 
 export const NICHES: Niche[] = [
-  { id: 1, name: "Health & Wellness", slug: "health-wellness", unsplash: "wellness yoga meditation healthy lifestyle" },
-  { id: 2, name: "Finance & Investing", slug: "finance-investing", unsplash: "finance investment stock market professional" },
-  { id: 3, name: "Technology & SaaS", slug: "technology-saas", unsplash: "technology software developer laptop modern" },
-  { id: 4, name: "Real Estate", slug: "real-estate", unsplash: "real estate luxury home architecture" },
-  { id: 5, name: "Legal & Law", slug: "legal-law", unsplash: "law legal courtroom professional lawyer" },
-  { id: 6, name: "Travel & Tourism", slug: "travel-tourism", unsplash: "travel destination landscape tourism" },
-  { id: 7, name: "E-Commerce & Retail", slug: "ecommerce-retail", unsplash: "ecommerce retail shopping online store" },
-  { id: 8, name: "Education & E-Learning", slug: "education", unsplash: "education learning student classroom" },
-  { id: 9, name: "Food & Nutrition", slug: "food-nutrition", unsplash: "food nutrition healthy meal restaurant" },
-  { id: 10, name: "Automotive", slug: "automotive", unsplash: "automotive car dealership modern vehicle" },
-  { id: 11, name: "Home Improvement", slug: "home-improvement", unsplash: "home improvement interior design renovation" },
+  { id: 1, name: "Health & Wellness", slug: "health-wellness", image: "/niche-health.jpg" },
+  { id: 2, name: "Finance & Investing", slug: "finance-investing",image: "/niche-finance.jpg" },
+  { id: 3, name: "Technology & SaaS", slug: "technology-saas",image: "/niche-tech.jpg" },
+  { id: 4, name: "Real Estate", slug: "real-estate", image: "/niche-realestate.jpg" },
+  { id: 5, name: "Legal & Law", slug: "legal-law", image: "/niche-legal.jpg" },
+  { id: 6, name: "Travel & Tourism", slug: "travel-tourism", image: "/niche-realestate.jpg" },
+  { id: 7, name: "E-Commerce & Retail", slug: "ecommerce-retail", image: "/niche-ecommerce.jpg" },
+  { id: 8, name: "Education & E-Learning", slug: "education", image: "/niche-education.jpg" },
+  { id: 9, name: "Food & Nutrition", slug: "food-nutrition", image: "/niche-food.jpg" },
+  { id: 10, name: "Automotive", slug: "automotive", image: "/niche-auto.jpg" },
+  { id: 11, name: "Home Improvement", slug: "home-improvement", image: "/niche-health.jpg" },
   { id: 12, name: "Beauty & Skincare", slug: "beauty-skincare", unsplash: "beauty skincare cosmetics professional" },
   { id: 13, name: "Fashion & Lifestyle", slug: "fashion-lifestyle", unsplash: "fashion lifestyle style photography" },
   { id: 14, name: "Sports & Fitness", slug: "sports-fitness", unsplash: "sports fitness gym training athlete" },
@@ -83,7 +83,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "DR & DA",
     readTime: "8 min read",
     date: "May 12, 2026",
-    unsplash: "domain authority seo analytics laptop"
+    unsplash: "/blog-domain-rating.jpg"
   },
   {
     id: "blog-2",
@@ -93,7 +93,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Link Building",
     readTime: "6 min read",
     date: "April 28, 2026",
-    unsplash: "guest posting writing content editorial"
+    unsplash: "/blog-guest-vs-niche.jpg"
   },
   {
     id: "blog-3",
@@ -103,7 +103,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "SEO Health",
     readTime: "10 min read",
     date: "March 15, 2026",
-    unsplash: "spam score moz toxic links cleanup"
+    unsplash: "/blog-spam-score.jpg"
   },
   {
     id: "blog-4",
@@ -113,7 +113,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "Link Building",
     readTime: "7 min read",
     date: "February 10, 2026",
-    unsplash: "outreach email marketing team office"
+    unsplash: "/blog-gbob.jpg"
   },
   {
     id: "blog-5",
@@ -123,7 +123,7 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "SEO Strategy",
     readTime: "9 min read",
     date: "January 18, 2026",
-    unsplash: "toxic links penalty google disavow"
+    unsplash: "/blog-white-hat.jpg"
   },
   {
     id: "blog-6",
@@ -133,6 +133,6 @@ export const BLOG_POSTS: BlogPost[] = [
     tag: "SEO Strategy",
     readTime: "11 min read",
     date: "June 05, 2026",
-    unsplash: "domain authority analytics growth chart"
+   unsplash: "/blog-anchor-text.jpg"
   }
 ]
