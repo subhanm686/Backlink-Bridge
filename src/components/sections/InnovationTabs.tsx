@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 export default function InnovationTabs() {
   const [activeTab, setActiveTab] = useState(0)
@@ -11,31 +11,31 @@ export default function InnovationTabs() {
   const tabs = [
     {
       label: "Manual Outreach Only",
-      photo: "person writing email laptop professional",
+      "/manual-outreach-meeting.jpg"
       h3: "No bots. No tools. Real human relationships.",
       body: "Every publisher relationship in our network was built through real email outreach by our team. We do not use automated link building tools, mass submission platforms, or any software that leaves footprints."
     },
     {
       label: "Publisher Vetting Process",
-      photo: "quality control checklist inspection professional",
+      "/step-2-vetting.jpg"
       h3: "Every site checked before a single link is placed.",
       body: "Our vetting team reviews every potential publisher for real organic traffic (verified via third-party tools), Domain Rating, Moz Spam Score, page indexation, editorial standards, and niche relevance. If it does not pass, we do not use it."
     },
     {
       label: "Content Quality Standard",
-      photo: "writer writing professional article content",
+      "/content-writing-desk.jpg"
       h3: "Every article written to rank and to read.",
       body: "All guest post content is 800–1,200 words, 100% human-written, structured for E-E-A-T compliance, and reviewed by an editor before submission. You approve every piece before it goes live."
     },
     {
       label: "Full Reporting Transparency",
-      photo: "dashboard analytics reporting spreadsheet",
+      "/step-4-results.jpg"
       h3: "Live reporting on every link we place.",
       body: "You receive a live report (Google Sheet or client portal) showing every placed link, the publisher domain, DR, DA, traffic estimate, anchor text used, and live URL. Updated within 24 hours of every placement."
     },
     {
       label: "Penalty-Safe Guarantee",
-      photo: "security protection shield professional",
+      "/trust-penalty-safe.jpg"
       h3: "White-hat only. Always Google-compliant.",
       body: "We maintain natural anchor text ratios, varied link velocity, diverse publisher footprints, and zero tolerance for PBNs. Our link building is designed to pass any Google manual review — now and in future algorithm updates."
     }
