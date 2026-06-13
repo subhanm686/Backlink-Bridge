@@ -132,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: "Anchor text profiles can make or break a ranking campaign. Discover how to balance brand, naked url, and keyword phrase match ratios.",
     tag: "SEO Strategy",
     readTime: "11 min read",
-    date: "December 05, 2025",
+    date: "June 05, 2026",
     unsplash: "domain authority analytics growth chart"
   }
 ]
