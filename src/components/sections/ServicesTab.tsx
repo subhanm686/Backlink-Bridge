@@ -5,15 +5,13 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import Badge from '../ui/Badge'
 import Button from '../ui/Button'
-import { getUnsplashUrl } from '@/lib/utils'
-
-export default function ServicesTab() {
+ export default function ServicesTab() {
   const [activeTab, setActiveTab] = useState(0)
 
   const tabsData = [
     {
       label: "Guest Posting",
-      photo: "writer desk laptop coffee notebook professional",
+      photo: "/content-writing-desk.jpg",
       h3: "Place your articles on real DR 30–80+ websites.",
       body: "We write editorial-quality articles and place them on genuine, traffic-verified websites in your exact niche. Every link is permanent, dofollow, and placed on a real editorial site — never a PBN or link farm.",
       bullets: [
@@ -27,7 +25,7 @@ export default function ServicesTab() {
     },
     {
       label: "GBOB Management",
-      photo: "outreach email marketing team office",
+     photo: "/manual-outreach-meeting.jpg",
       h3: "Your entire guest posting operation, fully managed.",
       body: "GBOB (Guest Blogging Outreach Business) is our flagship managed service. We handle every step — publisher sourcing, editor relationship building, pitch emails, content creation, and placement — so you can focus on your business.",
       bullets: [
@@ -41,7 +39,7 @@ export default function ServicesTab() {
     },
     {
       label: "Niche Edits",
-      photo: "editing article website content laptop",
+      photo: "/step-3-content.jpg",
       h3: "Links inside already-indexed, ranking articles.",
       body: "Niche edits place your link into existing high-authority content that is already indexed and ranking on Google. Faster authority transfer, immediate indexing, and natural placement in editorial context.",
       bullets: [
@@ -55,7 +53,7 @@ export default function ServicesTab() {
     },
     {
       label: "DR / DA Improvement",
-      photo: "domain authority analytics growth chart",
+      photo: "/dr-stuck-analytics.jpg",
       h3: "Structured 90-day campaigns to move your DR.",
       body: "We design tiered link building campaigns with a single goal: moving your Domain Rating from where it is to where you need it. Transparent milestones, real publisher diversity, and proven velocity.",
       bullets: [
@@ -69,7 +67,7 @@ export default function ServicesTab() {
     },
     {
       label: "Spam Score Cleanup",
-      photo: "toxic links penalty google disavow",
+     photo: "/spam-score-laptop.jpg",
       h3: "Remove toxic backlinks before they remove your rankings.",
       body: "We audit your entire backlink profile, identify toxic and spammy links dragging your Moz Spam Score up, build your disavow file, submit it to Google, and replace bad links with clean, high-authority placements.",
       bullets: [
@@ -83,7 +81,7 @@ export default function ServicesTab() {
     },
     {
       label: "Organic Traffic Growth",
-      photo: "organic search traffic growth analytics",
+      photo: "/traffic-stalled-dashboard.jpg",
       h3: "Links that bring rankings and real visitors.",
       body: "We target keyword-rich anchor text and place articles on sites with real organic readership. The result is not just better DR — it is actual referral traffic from readers who care about your niche.",
       bullets: [
@@ -144,7 +142,7 @@ export default function ServicesTab() {
                   {/* Tab Image */}
                   <div className="relative h-[280px] w-full rounded-lg overflow-hidden bg-slate-100 mb-6">
                     <Image
-                      src={getUnsplashUrl(tabsData[activeTab].photo, 800, 280)}
+                      src={tabsData[activeTab].photo}
                       alt={tabsData[activeTab].h3}
                       fill
                       sizes="(max-w-7xl) 50vw, 100vw"
