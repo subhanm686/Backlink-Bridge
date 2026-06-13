@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Button from '../ui/Button'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 24 },
