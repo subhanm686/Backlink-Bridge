@@ -2,16 +2,16 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Card from './Card'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 interface NicheCardProps {
   name: string
   slug: string
-  unsplashQuery: string
+  image: string
 }
 
-export default function NicheCard({ name, slug, unsplashQuery }: NicheCardProps) {
-  const imageUrl = getUnsplashUrl(unsplashQuery, 400, 240)
+export default function NicheCard({ name, slug, image }: NicheCardProps) {
+  const imageUrl = image
 
   return (
     <Card className="flex flex-col h-full">
