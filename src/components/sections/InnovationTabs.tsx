@@ -11,31 +11,31 @@ export default function InnovationTabs() {
   const tabs = [
     {
       label: "Manual Outreach Only",
-      "/manual-outreach-meeting.jpg"
+      image: "/manual-outreach-meeting.jpg",
       h3: "No bots. No tools. Real human relationships.",
       body: "Every publisher relationship in our network was built through real email outreach by our team. We do not use automated link building tools, mass submission platforms, or any software that leaves footprints."
     },
     {
       label: "Publisher Vetting Process",
-      "/step-2-vetting.jpg"
+     image: "/step-2-vetting.jpg",
       h3: "Every site checked before a single link is placed.",
       body: "Our vetting team reviews every potential publisher for real organic traffic (verified via third-party tools), Domain Rating, Moz Spam Score, page indexation, editorial standards, and niche relevance. If it does not pass, we do not use it."
     },
     {
       label: "Content Quality Standard",
-      "/content-writing-desk.jpg"
+      image: "/content-writing-desk.jpg",
       h3: "Every article written to rank and to read.",
       body: "All guest post content is 800–1,200 words, 100% human-written, structured for E-E-A-T compliance, and reviewed by an editor before submission. You approve every piece before it goes live."
     },
     {
       label: "Full Reporting Transparency",
-      "/step-4-results.jpg"
+      image: "/step-4-results.jpg",
       h3: "Live reporting on every link we place.",
       body: "You receive a live report (Google Sheet or client portal) showing every placed link, the publisher domain, DR, DA, traffic estimate, anchor text used, and live URL. Updated within 24 hours of every placement."
     },
     {
       label: "Penalty-Safe Guarantee",
-      "/trust-penalty-safe.jpg"
+      image: "/trust-penalty-safe.jpg",
       h3: "White-hat only. Always Google-compliant.",
       body: "We maintain natural anchor text ratios, varied link velocity, diverse publisher footprints, and zero tolerance for PBNs. Our link building is designed to pass any Google manual review — now and in future algorithm updates."
     }
@@ -86,7 +86,7 @@ export default function InnovationTabs() {
               {/* Left Column (Image) */}
               <div className="relative h-[250px] lg:h-[320px] w-full rounded-lg overflow-hidden bg-slate-100">
                 <Image
-                  src={getUnsplashUrl(tabs[activeTab].photo, 500, 320)}
+                  src={tabs[activeTab].image}
                   alt={tabs[activeTab].h3}
                   fill
                   sizes="(max-w-7xl) 50vw, 100vw"
