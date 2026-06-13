@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Card from '../ui/Card'
-import { getUnsplashUrl } from '@/lib/utils'
+
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 24 },
@@ -25,17 +25,17 @@ export default function TrustSection() {
     {
       title: "Manual Vetting, Always.",
       body: "Every publisher in our network was manually reviewed by our team. We do not use automated submission tools, no PBNs, no footprints — only real editors on real websites.",
-      photo: "person inspecting document quality control professional"
+     photo: "/trust-manual-vetting.jpg",
     },
     {
       title: "Full Transparency and Reporting.",
       body: "You receive a live reporting document showing every link placed, every publisher domain, DR, DA, anchor text, and live URL — updated within 24 hours of every placement.",
-      photo: "data dashboard transparency reporting screen"
+      photo: "/step-4-results.jpg",
     },
     {
       title: "No Risk. Penalty-Safe.",
       body: "Natural anchor ratios, varied link velocity, and white-hat methods that comply with Google quality guidelines — built to survive algorithm updates and manual reviews.",
-      photo: "partnership handshake agreement professional business"
+      photo: "/trust-penalty-safe.jpg",
     }
   ]
 
@@ -63,7 +63,7 @@ export default function TrustSection() {
               <Card className="flex flex-col h-full bg-white" hoverEffect={true}>
                 <div className="relative h-[200px] w-full bg-slate-100">
                   <Image
-                    src={getUnsplashUrl(signal.photo, 400, 200)}
+                    src={signal.photo}
                     alt={signal.title}
                     fill
                     sizes="(max-w-7xl) 33vw, 100vw"
