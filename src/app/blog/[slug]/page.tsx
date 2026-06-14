@@ -50,9 +50,19 @@ export default function BlogPostDetailPage({ params }: PageProps) {
     "dateModified": new Date().toISOString(),
     "author": {
       "@type": "Person",
-      "name": "Subhan Masood",
+      "name": "Muhammad Subhan",
       "url": "https://backlinkbridge.com/about",
-      "jobTitle": "SEO Strategist & Founder"
+      "jobTitle": "Founder & SEO Consultant",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Backlink Bridge",
+        "url": "https://backlinkbridge.com"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/backlink-bridge",
+        "https://backlinkbridge.com/about"
+      ],
+      "knowsAbout": ["Link Building", "Guest Posting", "Off-Page SEO", "Domain Rating", "Backlink Outreach"]
     },
     "publisher": {
       "@type": "Organization",
