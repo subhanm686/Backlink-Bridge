@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = constructMetadata({
   title: 'Case Studies | Backlink Bridge Link Building Results',
-  description: 'Real results from Backlink Bridge link building campaigns. See how we improved DR, DA, organic traffic, and keyword rankings for clients across multiple industries.',
+  description: "Real results from Backlink Bridge campaigns. See how we improved DR, DA, and keyword rankings for clients across multiple industries. View the results now.",
   canonicalUrl: 'https://backlinkbridge.com/case-studies',
 })
 
