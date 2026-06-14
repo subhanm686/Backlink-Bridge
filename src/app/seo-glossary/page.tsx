@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export const metadata = constructMetadata({
   title: 'SEO Glossary: 40+ SEO Terms Explained | Backlink Bridge',
-  description: 'The complete SEO glossary for beginners and professionals. 40+ essential SEO terms explained clearly — from anchor text and backlinks to Domain Rating, spam score, and more.',
+  description: "The complete SEO glossary for beginners and professionals. 40+ terms explained clearly — anchor text, DR, spam score, and more. Read the free glossary now.",
   canonicalUrl: 'https://backlinkbridge.com/seo-glossary',
 })
 
