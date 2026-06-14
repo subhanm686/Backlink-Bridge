@@ -9,8 +9,8 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "Fully Managed GBOB & Blogger Outreach Service | Backlink Bridge",
-  description: "Outsource your entire link building operation. Our GBOB management service handles publisher vetting, editor relationships, copywriters, and pitches.",
+  title: "Managed GBOB & Blogger Outreach Service | Backlink Bridge",
+description: "Outsource your entire link building operation. We handle publisher vetting, editor relationships, copywriters, and pitches. Get a free strategy call today.",
   canonicalUrl: "https://backlinkbridge.com/gbob-management"
 })
 
