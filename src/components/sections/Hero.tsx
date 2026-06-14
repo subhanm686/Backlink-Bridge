@@ -10,21 +10,14 @@ const fadeUpVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } }
 }
 
-<div className="absolute inset-0 z-0 opacity-40">
-  <Image
-    src="/hero-team-office.jpg"
-    alt=""
-    fill
-    priority
-    sizes="100vw"
-    className="object-cover object-center"
-  />
-</div>
+const containerVariant = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.15 } }
+}
 
 export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center py-32 overflow-hidden bg-navy">
-      {/* ✅ FIX: Use next/image with priority instead of CSS background */}
       <div className="absolute inset-0 z-0 opacity-40">
         <Image
           src="/hero-team-office.jpg"
@@ -36,7 +29,6 @@ export default function Hero() {
         />
       </div>
       <div className="absolute inset-0 z-10 bg-navy/70" />
-
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           variants={containerVariant}
@@ -51,14 +43,12 @@ export default function Hero() {
           >
             Professional Link Building Service &amp; Guest Posting Agency
           </motion.h1>
-
           <motion.p
             variants={fadeUpVariant}
             className="mt-6 text-[18px] md:text-xl text-slate-200 leading-relaxed max-w-2xl mx-auto font-medium"
           >
             Backlink Bridge connects your website to high-authority, niche-relevant publishers — improving your DR, DA, organic traffic, and search rankings through proven guest posting and link building strategies.
           </motion.p>
-
           <motion.div
             variants={fadeUpVariant}
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -70,12 +60,10 @@ export default function Hero() {
               See How It Works →
             </Button>
           </motion.div>
-
           <motion.p
             variants={fadeUpVariant}
             className="mt-8 text-sm font-semibold tracking-wide text-slate-300 uppercase"
-          >
-          </motion.p>
+          />
         </motion.div>
       </div>
     </section>
