@@ -9,8 +9,7 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "DR & DA Improvement Service | Backlink Bridge",
-  description: "Improve your website's authority metrics safely. Leverage high-quality contextual link juice to grow your Ahrefs Domain Rating and Moz Domain Authority.",
+  description: "Improve your DR and DA safely with high-quality contextual links. Structured 90-day authority campaigns with live reporting. Get a free site audit today.",
   canonicalUrl: "https://backlinkbridge.com/dr-da-improvement"
 })
 
