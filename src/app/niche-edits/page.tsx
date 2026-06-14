@@ -8,8 +8,8 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "High-Authority Niche Edits & Link Insertions | Backlink Bridge",
-  description: "Get contextually relevant links inserted into already-indexed, traffic-generating articles. Boost your rankings immediately.",
+  title: "Niche Edits & Link Insertions Service | Backlink Bridge",
+description: "Get contextual links inserted into already-indexed, traffic-generating articles. Boost your rankings fast with high-authority placements. Get a free audit today.",
   canonicalUrl: "https://backlinkbridge.com/niche-edits"
 })
 
