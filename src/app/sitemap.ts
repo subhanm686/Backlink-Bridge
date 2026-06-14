@@ -4,6 +4,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://backlinkbridge.com'
 
   return [
+    // ============================================
+    // CORE PAGES
+    // ============================================
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -22,6 +25,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/pricing`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/free-site-audit`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
+    // ============================================
+    // SERVICE PAGES
+    // ============================================
     {
       url: `${baseUrl}/guest-posting`,
       lastModified: new Date(),
@@ -64,6 +89,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+
+    // ============================================
+    // BLOG INDEX + ALL POSTS
+    // ============================================
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
@@ -71,8 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      
-url: `${baseUrl}/blog/improve-domain-rating-2026`,
+      url: `${baseUrl}/blog/improve-domain-rating-2026`,
       lastModified: new Date('2026-05-12'),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -84,8 +112,7 @@ url: `${baseUrl}/blog/improve-domain-rating-2026`,
       priority: 0.7,
     },
     {
-    
-url: `${baseUrl}/blog/reduce-spam-score-guide-2026`,
+      url: `${baseUrl}/blog/reduce-spam-score-guide-2026`,
       lastModified: new Date('2026-03-15'),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -108,36 +135,32 @@ url: `${baseUrl}/blog/reduce-spam-score-guide-2026`,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+
+    // ============================================
+    // RESOURCE PAGES
+    // ============================================
     {
-      url: `${baseUrl}/free-site-audit`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-  url: `${baseUrl}/privacy`,
-  lastModified: new Date(),
-  changeFrequency: 'monthly',
-  priority: 0.4,
-},
-{
-  url: `${baseUrl}/terms`,
-  lastModified: new Date(),
-  changeFrequency: 'monthly',
-  priority: 0.4,
-},
-{
-  url: `${baseUrl}/refund`,
-  lastModified: new Date(),
-  changeFrequency: 'monthly',
-  priority: 0.4,
-},
-   {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/seo-glossary`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/anchor-text-guide`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/dr-vs-da`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+
+    // ============================================
+    // CASE STUDIES
+    // ============================================
     {
       url: `${baseUrl}/case-studies`,
       lastModified: new Date(),
@@ -156,5 +179,27 @@ url: `${baseUrl}/blog/reduce-spam-score-guide-2026`,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-]
+
+    // ============================================
+    // LEGAL PAGES
+    // ============================================
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/refund`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+  ]
 }
