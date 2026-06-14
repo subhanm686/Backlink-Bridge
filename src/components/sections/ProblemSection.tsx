@@ -70,7 +70,7 @@ export default function ProblemSection() {
                     fill
                     sizes="(max-w-7xl) 33vw, 100vw"
                     className="object-cover"
-                    priority
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">
