@@ -9,8 +9,7 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "Bespoke Link Building Campaigns | Backlink Bridge",
-  description: "Scale your organic search presence with custom-tailored outreach. High-DR contextual placements built specifically for your competitors authority gap.",
+  description: "Scale your organic presence with custom outreach campaigns. High-DR contextual placements built around your competitor authority gap. Request a free audit today.",
   canonicalUrl: "https://backlinkbridge.com/link-building-campaigns"
 })
 
