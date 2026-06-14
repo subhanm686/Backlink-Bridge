@@ -150,6 +150,18 @@ export default function CaseStudyRealEstatePage() {
           </div>
         </div>
 
+        <div className="mt-10 p-8 bg-blue-50 border border-blue-100 rounded-2xl">
+          <p className="text-[17px] text-navy italic leading-relaxed mb-4">
+            &ldquo;We had tried two other agencies before Backlink Bridge. Neither moved our DR. Within 60 days our DR jumped from 14 to 38 — and we hit 52 by the end of the campaign. The links were on real sites with real traffic.&rdquo;
+          </p>
+          <p className="text-sm font-semibold text-slate-600">— Head of Marketing, PropertyVault <span className="text-slate-400 font-normal">(Real Estate, Australia)</span></p>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-border">
+          <Link href="/case-studies" className="text-[15px] font-bold text-primary hover:underline">
+            Back to All Case Studies
+          </Link>
+        </div>
         <div className="mt-12 pt-8 border-t border-border">
           <Link href="/case-studies" className="text-[15px] font-bold text-primary hover:underline">
             Back to All Case Studies
