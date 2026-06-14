@@ -8,7 +8,7 @@ import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
   title: "How It Works | Backlink Bridge Outreach Process",
-  description: "Learn about our 12-point publisher vetting process, human content standards, live reporting, and link-building delivery timeline.",
+  description: "See our 12-point publisher vetting process, human content standards, live reporting, and link-building delivery timeline. Start your campaign today.",
   canonicalUrl: "https://backlinkbridge.com/how-it-works"
 })
 
