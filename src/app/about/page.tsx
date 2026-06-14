@@ -10,7 +10,7 @@ import { STATS } from '@/lib/constants'
 
 export const metadata = constructMetadata({
   title: "About Our Link Building Agency | Backlink Bridge",
-  description: "Learn how we built the bridge most link builders skip. Discover our manual email outreach philosophy, values, and meet our editorial team.",
+  description: "Learn how we built the bridge most link builders skip. Discover our manual outreach philosophy and meet our editorial team. See why 1,200+ sites trust us.",
   canonicalUrl: "https://backlinkbridge.com/about"
 })
 
