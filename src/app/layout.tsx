@@ -6,7 +6,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import './globals.css'
 import { OrganizationSchema, ServiceSchema } from '@/components/SchemaMarkup'
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -61,6 +61,16 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+       
+      </body>
+    </html>
+  )
+}
+<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
+      </body>
+    </html>
+  )
+}
       </body>
 </html>
   )
