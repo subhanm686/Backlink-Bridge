@@ -169,6 +169,12 @@ export default function CaseStudyGbobSaasPage() {
       </section>
 
       <BottomCTA />
+      <div className="mt-10 p-8 bg-blue-50 border border-blue-100 rounded-2xl">
+          <p className="text-[17px] text-navy italic leading-relaxed mb-4">
+            &ldquo;Backlink Bridge handled everything — publisher recruitment, content, pitching, and reporting. In 6 months we went from DR 8 to DR 47 and our organic traffic grew 1,240%. Every link was on a real, traffic-verified editorial site.&rdquo;
+          </p>
+          <p className="text-sm font-semibold text-slate-600">— CEO, CloudSync <span className="text-slate-400 font-normal">(B2B SaaS)</span></p>
+        </div>
     </main>
   )
 }
