@@ -109,9 +109,9 @@ export default function Navbar() {
                 className="hover:opacity-90 transition-opacity flex items-center"
                 aria-label="Backlink Bridge Home"
               >
-                <span className="text-3xl font-extrabold tracking-tight text-navy select-none">
-                  <span className="text-primary font-black text-[34px]">B</span>acklink <span className="text-primary font-black text-[34px]">B</span>ridge
-                </span>
+                <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-navy select-none whitespace-nowrap">
+  <span className="text-primary font-black">B</span>acklink <span className="text-primary font-black">B</span>ridge
+</span>
               </Link>
             </div>
 
