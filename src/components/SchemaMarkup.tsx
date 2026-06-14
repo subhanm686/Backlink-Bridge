@@ -110,7 +110,7 @@ export function FAQSchema() {
         "name": "What is link building and why does my website need it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Link building is the process of acquiring backlinks from other websites to yours. It is one of the most important off-page SEO factors because search engines like Google use backlinks as votes of authority and trust. More high-quality backlinks typically lead to higher rankings and more organic traffic."
+          "text": "Link building is the process of acquiring backlinks from other websites to yours. It is one of the most important off-page SEO factors because search engines like Google treat backlinks as votes of confidence. The more high-quality backlinks your site has, the higher it tends to rank in search results, driving more organic traffic and leads."
         }
       },
       {
@@ -118,7 +118,7 @@ export function FAQSchema() {
         "name": "What is the difference between DR and DA?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "DR (Domain Rating) is a metric by Ahrefs that measures the strength of a website's backlink profile on a scale of 0–100. DA (Domain Authority) is a similar metric by Moz. Both are used to gauge how authoritative a domain is — a higher score generally correlates with better search rankings."
+          "text": "DR (Domain Rating) is a metric by Ahrefs that measures the strength of a website's backlink profile on a scale of 0 to 100. DA (Domain Authority) is a similar metric created by Moz. Both measure link authority but use different algorithms and data sources. Neither is a Google ranking factor directly, but both correlate strongly with search performance."
         }
       },
       {
@@ -126,7 +126,7 @@ export function FAQSchema() {
         "name": "How long does it take to see results from link building?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most clients start seeing measurable improvements in DR/DA within 4–8 weeks of a link building campaign. Organic ranking and traffic improvements typically follow within 2–4 months, depending on the competitiveness of the niche and the current state of your backlink profile."
+          "text": "Most clients start seeing measurable improvements in DR and DA within 4 to 8 weeks of a link building campaign. Organic ranking and traffic improvements typically appear within 60 to 90 days as Google re-evaluates your backlink profile and adjusts your keyword positions accordingly."
         }
       },
       {
@@ -134,7 +134,7 @@ export function FAQSchema() {
         "name": "Are your backlinks safe and Google-compliant?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. BacklinkBridge only builds links through genuine guest posts, editorial placements, and white-hat outreach methods. We do not use PBNs, link farms, or any techniques that violate Google's Webmaster Guidelines."
+          "text": "Yes. Backlink Bridge only builds links through genuine guest posts, editorial placements, and white-hat outreach methods. We do not use PBNs, link farms, automated tools, or any tactics that violate Google quality guidelines. All links are placed on real, traffic-verified websites with natural anchor ratios."
         }
       },
       {
@@ -142,7 +142,7 @@ export function FAQSchema() {
         "name": "Do you offer guest posting services for specific niches?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. We provide niche-specific guest posting across 28+ industries including finance, health, technology, real estate, legal, SaaS, e-commerce, and more. All placements are on relevant, real-traffic websites with strong DR."
+          "text": "Yes. We provide niche-specific guest posting across 28 or more industries including finance, health, technology, real estate, legal, SaaS, e-commerce, travel, education, and more. Our publisher network includes manually vetted sites in each vertical with real organic traffic and editorial standards."
         }
       }
     ]
