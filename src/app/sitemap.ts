@@ -71,7 +71,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog/improve-domain-rating-2025`,
+      
+url: `${baseUrl}/blog/improve-domain-rating-2026`,
       lastModified: new Date('2026-05-12'),
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -83,7 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/reduce-spam-score-guide`,
+    
+url: `${baseUrl}/blog/reduce-spam-score-guide-2026`,
       lastModified: new Date('2026-03-15'),
       changeFrequency: 'monthly',
       priority: 0.7,
