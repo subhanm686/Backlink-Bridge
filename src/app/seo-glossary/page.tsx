@@ -1,6 +1,7 @@
 import { constructMetadata } from '@/lib/metadata'
 import BottomCTA from '@/components/sections/BottomCTA'
 import Link from 'next/link'
+import AuthorBio from '@/components/AuthorBio'
 
 export const metadata = constructMetadata({
   title: 'SEO Glossary: 40+ SEO Terms Explained | Backlink Bridge',
@@ -105,6 +106,9 @@ export default function SeoGlossaryPage() {
         </div>
       </section>
 
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AuthorBio />
+      </div>
       <BottomCTA />
     </main>
   )
