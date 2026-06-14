@@ -12,8 +12,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'sw
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' })
 
 export const metadata: Metadata = {
-  title: "Backlink Bridge | High-Authority Link Building & Guest Posting",
-  description: "Backlink Bridge is a done-for-you link building service that manually sources, vets, and places your content on real, high-authority websites across 25+ niches.",
+  title: {
+  default: "Link Building & Guest Posting Service | Backlink Bridge",
+  template: "%s | Backlink Bridge",
+},
+description: "Connect to high-authority, niche-relevant publishers. Improve your DR, DA, and organic traffic with human blogger outreach. Get a free site audit today.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
