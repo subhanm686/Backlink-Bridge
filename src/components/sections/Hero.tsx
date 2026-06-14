@@ -10,10 +10,16 @@ const fadeUpVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } }
 }
 
-const containerVariant = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } }
-}
+<div className="absolute inset-0 z-0 opacity-40">
+  <Image
+    src="/hero-team-office.jpg"
+    alt=""
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center"
+  />
+</div>
 
 export default function Hero() {
   return (
