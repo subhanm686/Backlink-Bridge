@@ -64,7 +64,9 @@ export default function AboutPage() {
   ]
 
   return (
-    <main className="bg-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
+      <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-navy py-20 border-b border-navy-light/35 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-navy to-navy-light/90 opacity-80" />
