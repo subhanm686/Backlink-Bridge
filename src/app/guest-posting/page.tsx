@@ -10,8 +10,8 @@ import { constructMetadata, getServiceSchema, getFAQSchema } from '@/lib/metadat
 import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
-  title: "Guest Posting Service — DR 30–80+ Placements | Backlink Bridge",
-description: "Buy guest posts on real DR 30–80+ websites in your niche. Human-written 800–1,200 word articles, permanent dofollow links, full draft approval. Free site audit included.",
+  title: "Guest Posting Service | DR 30–80+ Links | Backlink Bridge",
+description: "Buy guest posts on real DR 30–80+ websites in your niche. Human-written articles, permanent dofollow links, full draft approval. Request a free audit today.",
   canonicalUrl: "https://backlinkbridge.com/guest-posting"
 })
 
