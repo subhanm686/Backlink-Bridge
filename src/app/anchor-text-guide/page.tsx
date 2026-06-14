@@ -4,8 +4,8 @@ import AuthorBio from '@/components/AuthorBio'
 import Link from 'next/link'
 
 export const metadata = constructMetadata({
-  title: 'Anchor Text Guide: Types, Ratios & SEO Best Practices | Backlink Bridge',
-  description: 'The complete anchor text guide for SEO. Learn the different types of anchor text, ideal ratios, and how to build a natural backlink profile that ranks.',
+ title: "Anchor Text Guide: Types, Ratios & SEO Tips | Backlink Bridge",
+description: "The complete anchor text guide for SEO. Learn types, ideal ratios, and how to build a natural backlink profile that ranks. Read the free guide now.",
   canonicalUrl: 'https://backlinkbridge.com/anchor-text-guide',
 })
 
