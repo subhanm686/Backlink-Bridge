@@ -13,21 +13,32 @@ export const metadata = constructMetadata({
   description: "Learn how we built the bridge most link builders skip. Discover our manual outreach philosophy and meet our editorial team. See why 1,200+ sites trust us.",
   canonicalUrl: "https://backlinkbridge.com/about"
 })
+
+
 const aboutSchema = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "url": "https://backlinkbridge.com/about",
   "name": "About Backlink Bridge",
-  "description": "Backlink Bridge is a manual link building agency helping websites improve Domain Rating, reduce spam score, and grow organic traffic.",
+  "description": "Backlink Bridge is a manual link building agency helping websites improve Domain Rating, reduce spam score, and grow organic traffic through ethical guest posting and outreach.",
   "mainEntity": {
     "@type": "Organization",
     "name": "Backlink Bridge",
     "url": "https://backlinkbridge.com",
+    "logo": "https://backlinkbridge.com/logo.png",
     "foundingDate": "2021",
     "email": "contact@backlinkbridge.com",
-    "areaServed": "Worldwide"
+    "description": "Manual link building agency specialising in guest posting, niche edits, DR/DA improvement, and spam score cleanup for websites worldwide.",
+    "areaServed": "Worldwide",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.linkedin.com/company/backlink-bridge/",
+      "https://www.facebook.com/profile.php?id=61590615572279"
+    ]
   }
 }
+
+
 export default function AboutPage() {
   const values = [
     {
