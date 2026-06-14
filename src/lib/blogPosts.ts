@@ -55,7 +55,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "11 min read",
     date: "June 05, 2026",
     dateISO: "2026-06-05",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: The Guide to Keyword-Targeted Anchor Text",
     featured: false,
   },
@@ -68,7 +68,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "8 min read",
     date: "May 12, 2026",
     dateISO: "2026-05-12",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: What Is Domain Rating and How to Improve It in 2026",
     featured: true,
   },
@@ -81,7 +81,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "6 min read",
     date: "April 28, 2026",
     dateISO: "2026-04-28",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: Guest Posting vs. Niche Edits: Which Builds Authority Faster?",
     featured: true,
   },
@@ -94,7 +94,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "10 min read",
     date: "March 15, 2026",
     dateISO: "2026-03-15",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: How to Reduce Spam Score: Complete 2026 Guide",
     featured: false,
   },
@@ -107,7 +107,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "7 min read",
     date: "February 10, 2026",
     dateISO: "2026-02-10",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: What is GBOB? The Outreach Business Model Explained",
     featured: false,
   },
@@ -120,7 +120,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "9 min read",
     date: "January 18, 2026",
     dateISO: "2026-01-18",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&h=220&q=80",
+    "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=400&h=220&q=80"
     imageAlt: "SEO Strategy Article: White Hat vs Black Hat Link Building: The Real Risks",
     featured: false,
   },
