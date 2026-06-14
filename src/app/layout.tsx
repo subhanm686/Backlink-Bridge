@@ -1,78 +1,77 @@
+"use client"
+
 import React from 'react'
-import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
-import Script from 'next/script'
-import Navbar from '@/components/layout/Navbar'
-import Footer from '@/components/layout/Footer'
-import './globals.css'
-import { OrganizationSchema, ServiceSchema } from '@/components/SchemaMarkup'
-import { GoogleAnalytics } from '@next/third-parties/google'
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import Button from '../ui/Button'
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-})
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' as const } }
+}
 
-export const metadata: Metadata = {
-  title: "Backlink Bridge | High-Authority Link Building & Guest Posting",
-  description: "Backlink Bridge is a done-for-you link building service that manually sources, vets, and places your content on real, high-authority websites across 25+ niches.",
-  icons: {
-    icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    shortcut: "/favicon.ico",
-  },
-};
+const containerVariant = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.15 } }
+}
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Hero() {
   return (
-  <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-  <head>
-   <OrganizationSchema />
-          <ServiceSchema />
-          
-        </head>
-      <body className="bg-white antialiased text-slate-600 font-sans">
-        {/* Future Phase: Crisp or Intercom Live Chat Script (Placeholder) */}
-        <Script
-          id="live-chat-script"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `// Future Phase: Crisp or Intercom live chat script placeholder`
-          }}
+    <section className="relative min-h-[85vh] flex items-center justify-center py-32 overflow-hidden bg-navy">
+      {/* ✅ FIX: Use next/image with priority instead of CSS background */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <Image
+          src="/hero-team-office.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
-        <Navbar />
-        {/* Padding-top to avoid content clipping behind the sticky header */}
-        <div className="pt-[73px] min-h-[75vh]">
-          {children}
-        </div>
-        <Footer />
-       
-      </body>
-    </html>
-  )
-}
-<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!} />
-      </body>
-    </html>
-  )
-}
-      </body>
-</html>
-  )
-}
+      </div>
+      <div className="absolute inset-0 z-10 bg-navy/70" />
 
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          variants={containerVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto"
+        >
+          <motion.h1
+            variants={fadeUpVariant}
+            className="text-[44px] md:text-6xl font-extrabold text-white font-display leading-[1.1] tracking-tight"
+          >
+            Professional Link Building Service &amp; Guest Posting Agency
+          </motion.h1>
+
+          <motion.p
+            variants={fadeUpVariant}
+            className="mt-6 text-[18px] md:text-xl text-slate-200 leading-relaxed max-w-2xl mx-auto font-medium"
+          >
+            Backlink Bridge connects your website to high-authority, niche-relevant publishers — improving your DR, DA, organic traffic, and search rankings through proven guest posting and link building strategies.
+          </motion.p>
+
+          <motion.div
+            variants={fadeUpVariant}
+            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <Button href="/free-site-audit" variant="primary" size="lg" className="w-full sm:w-auto">
+              Get Free Site Audit
+            </Button>
+            <Button href="/how-it-works" variant="outline-white" size="lg" className="w-full sm:w-auto">
+              See How It Works →
+            </Button>
+          </motion.div>
+
+          <motion.p
+            variants={fadeUpVariant}
+            className="mt-8 text-sm font-semibold tracking-wide text-slate-300 uppercase"
+          >
+          </motion.p>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
