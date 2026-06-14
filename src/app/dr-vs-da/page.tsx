@@ -4,8 +4,8 @@ import AuthorBio from '@/components/AuthorBio'
 import Link from 'next/link'
 
 export const metadata = constructMetadata({
-  title: 'DR vs DA: Domain Rating vs Domain Authority Explained | Backlink Bridge',
-  description: 'What is the difference between DR and DA? This guide explains Domain Rating (Ahrefs) vs Domain Authority (Moz), how each is calculated, and which matters more for SEO.',
+ title: "DR vs DA: Domain Rating vs Domain Authority | Backlink Bridge",
+description: "What is the difference between DR and DA? Learn how Domain Rating and Domain Authority are calculated and which matters more for SEO. Read the guide now.",
   canonicalUrl: 'https://backlinkbridge.com/dr-vs-da',
 })
 
