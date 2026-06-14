@@ -10,7 +10,7 @@ import { getUnsplashUrl } from '@/lib/utils'
 
 export const metadata = constructMetadata({
   title: "Spam Score Cleanup Service | Backlink Bridge",
-  description: "Neutralize search penalties and drop your Moz Spam Score. Complete backlink profile audit, toxic link identification, and Google Disavow preparation.",
+  description: "Drop your Moz Spam Score and neutralise search penalties. Full backlink audit, toxic link identification, and Google Disavow preparation. Get started today.",
   canonicalUrl: "https://backlinkbridge.com/spam-cleanup"
 })
 
