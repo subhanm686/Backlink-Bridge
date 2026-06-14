@@ -13,10 +13,10 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 
 export const metadata: Metadata = {
   title: {
-  default: "Link Building & Guest Posting Service | Backlink Bridge",
-  template: "%s | Backlink Bridge",
-},
-description: "Connect to high-authority, niche-relevant publishers. Improve your DR, DA, and organic traffic with human blogger outreach. Get a free site audit today.",
+    default: "Link Building & Guest Posting Service | Backlink Bridge",
+    template: "%s | Backlink Bridge",
+  },
+  description: "Connect to high-authority, niche-relevant publishers. Improve your DR, DA, and organic traffic with human blogger outreach. Get a free site audit today.",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
