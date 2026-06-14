@@ -56,7 +56,9 @@ export default function CaseStudiesPage() {
     }))
   }
   return (
-    <main className="bg-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(caseStudiesSchema) }} />
+      <main className="bg-white">
 
       {/* Hero */}
       <section className="bg-navy py-20 border-b border-navy-light/35">
