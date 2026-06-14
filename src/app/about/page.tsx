@@ -237,5 +237,6 @@ export default function AboutPage() {
       {/* Bottom CTA */}
       <BottomCTA />
     </main>
+        </>
   )
 }
