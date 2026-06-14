@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
- 
+ import AuthorBio from "@/components/AuthorBio";
+
 export const metadata: Metadata = {
   title: "How to Improve Domain Rating (DR) and Remove Toxic Backlinks in 2026",
   description:
@@ -751,7 +752,7 @@ export default function HowToImproveDomainRatingPage() {
           BacklinkBridge is a white-hat SEO and link building agency. We do not sell spam links,
           PBN links, or any service that violates Google&apos;s Webmaster Guidelines.
         </p>
- 
+  <AuthorBio />
       </main>
     </>
   );
