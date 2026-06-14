@@ -9,6 +9,7 @@ import NicheGrid from '@/components/sections/NicheGrid'
 import HowItWorks from '@/components/sections/HowItWorks'
 
 import TrustSection from '@/components/sections/TrustSection'
+import Testimonials from '@/components/sections/Testimonials'
 import StatsBanner from '@/components/sections/StatsBanner'
 import BlogPreview from '@/components/sections/BlogPreview'
 import BottomCTA from '@/components/sections/BottomCTA'
@@ -75,6 +76,7 @@ export default function Home() {
         <HowItWorks />
     
         <TrustSection />
+       <Testimonials />
         <StatsBanner />
         <BlogPreview />
         <BottomCTA />
