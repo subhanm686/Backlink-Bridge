@@ -40,6 +40,21 @@ const caseStudies = [
 ]
 
 export default function CaseStudiesPage() {
+  const caseStudiesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Backlink Bridge Case Studies",
+    "description": "Real link building results from Backlink Bridge campaigns across multiple industries.",
+    "url": "https://backlinkbridge.com/case-studies",
+    "numberOfItems": caseStudies.length,
+    "itemListElement": caseStudies.map((cs, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "url": `https://backlinkbridge.com/case-studies/${cs.slug}`,
+      "name": cs.headline,
+      "description": cs.summary
+    }))
+  }
   return (
     <main className="bg-white">
 
