@@ -714,38 +714,6 @@ export default function HowToImproveDomainRatingPage() {
           </div>
         </section>
  
-        {/* ══════════════════════════════════════════
-            AUTHOR BIO
-        ══════════════════════════════════════════ */}
-        <div className="border border-gray-200 rounded-xl p-6 bg-gray-50">
-          <div className="flex items-start gap-4">
-            <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
-              <img src="/founder-photo.jpg" alt="Muhammad Subhan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </div>
-            <div>
-              <p className="font-bold text-gray-900">Muhammad Subhan</p>
-              <p className="text-sm text-blue-600 mb-2">SEO Consultant &amp; Founder, BacklinkBridge</p>
-              <p className="text-sm text-gray-600 mb-3">
-                Muhammad Subhan is the founder of BacklinkBridge, a link building and off-page SEO
-                agency based in Melbourne, Australia. With 5 years of experience in digital
-                marketing, he specialises in off-page SEO strategy, DR improvement campaigns,
-                toxic backlink removal, and guest post outreach across B2B, SaaS, and service
-                business niches.
-              </p>
-              <p className="text-xs text-gray-500 mb-3">
-                <em>Skills: Off-page SEO · Link Building · Backlink Auditing · Guest Post Outreach · DR/DA Improvement · Spam Score Reduction · Anchor Text Strategy · Google Search Console</em>
-              </p>
-              <a
-                href="https://www.linkedin.com/company/backlinkbridge"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-blue-600 hover:underline font-medium"
-              >
-                Follow BacklinkBridge on LinkedIn →
-              </a>
-            </div>
-          </div>
-        </div>
  
         {/* ── FOOTER NOTE ── */}
         <p className="text-xs text-gray-400 text-center mt-8">
