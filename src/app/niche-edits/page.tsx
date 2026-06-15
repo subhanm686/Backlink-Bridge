@@ -1,3 +1,4 @@
+import Breadcrumb from '@/components/ui/Breadcrumb'
 import React from 'react'
 import Image from 'next/image'
 import Badge from '@/components/ui/Badge'
@@ -59,6 +60,8 @@ export default function NicheEditsPage() {
       />
 
       <main className="bg-white">
+
+        <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Niche Edits" }]} />
         
         {/* Hero Section */}
         <section className="relative py-32 bg-slate-900 overflow-hidden text-center">
