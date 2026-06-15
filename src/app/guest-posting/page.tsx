@@ -1,3 +1,4 @@
+import Breadcrumb from '@/components/ui/Breadcrumb'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -61,6 +62,7 @@ export default function GuestPostingPage() {
       />
 
       <main className="bg-white">
+        <Breadcrumb items={[{ label: "Services", href: "/services" }, { label: "Guest Posting" }]} />
         
         {/* Hero Section */}
         <section className="relative py-32 bg-slate-900 overflow-hidden text-center">
