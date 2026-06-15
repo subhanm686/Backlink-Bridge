@@ -720,7 +720,7 @@ export default function HowToImproveDomainRatingPage() {
         <div className="border border-gray-200 rounded-xl p-6 bg-gray-50">
           <div className="flex items-start gap-4">
             <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
-              MS
+              <img src="/founder-photo.jpg" alt="Muhammad Subhan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div>
               <p className="font-bold text-gray-900">Muhammad Subhan</p>
