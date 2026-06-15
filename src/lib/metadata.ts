@@ -11,7 +11,7 @@ interface MetadataProps {
 export function constructMetadata({
  title = "Link Building & Guest Posting Service | Backlink Bridge",
   description = "Connect to high-authority, niche-relevant publishers. Improve your DR, DA, and organic traffic with human blogger outreach. Get a free site audit today.",
-  image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=630&q=80",
+  image = "https://backlinkbridge.com/og-image.jpg",
   noIndex = false,
   canonicalUrl = "https://backlinkbridge.com"
 }: MetadataProps = {}): Metadata {
