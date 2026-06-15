@@ -34,7 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <OrganizationSchema />
         <ServiceSchema />
        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+          crossOrigin="anonymous" />
       </head>
       <body className="bg-white antialiased text-slate-600 font-sans">
         <Script
