@@ -3,8 +3,14 @@ import Link from 'next/link'
 export default function AuthorBio() {
   return (
     <div className="flex gap-5 items-start border border-gray-200 rounded-2xl p-6 mt-10 bg-gray-50">
-      <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-900 flex items-center justify-center text-white font-semibold text-xl">
-        MS
+      <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-900 overflow-hidden border-2 border-blue-200">
+        <img
+          src="/founder-photo.jpg"
+          alt="Muhammad Subhan — Founder, Backlink Bridge"
+          width={64}
+          height={64}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        />
       </div>
       <div>
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-1">Written by</p>
