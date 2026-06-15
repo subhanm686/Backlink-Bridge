@@ -187,7 +187,7 @@ export default function AboutPage() {
 
             <div className="flex flex-col md:flex-row gap-8 items-start bg-slate-50 border border-slate-200 rounded-2xl p-8">
               <div className="flex-shrink-0 w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-2xl" style={{ backgroundColor: '#0f2444' }}>
-                MS
+                <img src="/founder-photo.jpg" alt="Muhammad Subhan" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-navy mb-1">Muhammad Subhan</h3>
