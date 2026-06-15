@@ -47,6 +47,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================
     // SERVICE PAGES
     // ============================================
+   {
+      url: `${baseUrl}/services`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    
     {
       url: `${baseUrl}/guest-posting`,
       lastModified: new Date(),
