@@ -1,3 +1,4 @@
+import Breadcrumb from '@/components/ui/Breadcrumb'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -86,7 +87,8 @@ export default function BlogPostDetailPage({ params }: PageProps) {
       />
 
       <article className="bg-white min-h-screen">
-        <section className="bg-surface py-20 border-b border-border">
+          <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
+          <section className="bg-surface py-20 border-b border-border">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <div className="flex items-center gap-3">
               <Link href="/blog" className="text-sm font-semibold text-primary hover:underline flex items-center gap-1">
