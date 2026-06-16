@@ -666,7 +666,7 @@ export const BLOG_CONTENT: BlogContent[] = [
     ),
   },
  ]
-}
+
 export function getBlogContent(slug: string): BlogContent | undefined {
   return BLOG_CONTENT.find((c) => c.slug === slug)
 }
