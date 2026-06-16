@@ -39,7 +39,21 @@ export default function BlogPostDetailPage({ params }: PageProps) {
   if (!post) { notFound() }
 
   const content = getBlogContent(params.slug)
-
+  
+// Serve raw HTML for specific posts
+if (params.slug === 'how-to-get-backlinks-for-new-website') {
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<script>
+          window.onload = function() {
+            window.location.replace('/blog-posts/how-to-get-backlinks-new-website.html');
+          }
+        </script>`
+      }}
+    />
+  )
+}
   const blogPostSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
