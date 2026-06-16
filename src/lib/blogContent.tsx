@@ -547,8 +547,7 @@ export const BLOG_CONTENT: BlogContent[] = [
         </p>
 
         <h3 className="text-xl font-bold text-navy font-display pt-2">Does anchor text on internal links matter?</h3>
-        <p>
-          <h3 className="text-xl font-bold text-navy font-display pt-2">Does anchor text on internal links matter?</h3>
+        
         <p>
           Yes — internal anchor text is an important on-page SEO signal. You have full control over internal anchors so use descriptive, keyword-rich phrases that reflect the target page topic.
         </p>
