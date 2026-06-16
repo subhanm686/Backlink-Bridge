@@ -134,5 +134,15 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "11 min read",
     date: "June 05, 2026",
    unsplash: "/blog-anchor-text.jpg"
-  }
-]
+  },
+    {
+      id: "blog-7",
+      slug: "how-to-get-backlinks-for-new-website",
+      title: "How to Get Backlinks for a New Website in 2026: A Proven Foundational Framework",
+      excerpt: "New websites face a brutal cold-start problem. This guide covers a systematic approach to foundational link building — covering DR targets, outreach mechanics, guest posting, and dofollow link acquisition from scratch.",
+      tag: "Link Building",
+      readTime: "9 min read",
+      date: "June 16, 2026",
+      unsplash: "/blog-domain-rating.jpg"
+    }
+  ]
