@@ -471,6 +471,7 @@ export const BLOG_CONTENT: BlogContent[] = [
       </>
     ),
   },
+  
   {
     slug: 'anchor-text-ratio-guide',
     readTime: '12 min read',
@@ -664,8 +665,8 @@ export const BLOG_CONTENT: BlogContent[] = [
       </>
     ),
   },
-]
-
+ ]
+}
 export function getBlogContent(slug: string): BlogContent | undefined {
   return BLOG_CONTENT.find((c) => c.slug === slug)
 }
