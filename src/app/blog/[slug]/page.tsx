@@ -47,7 +47,7 @@ if (params.slug === 'how-to-get-backlinks-for-new-website') {
       dangerouslySetInnerHTML={{
         __html: `<script>
           window.onload = function() {
-            window.location.replace('/blog-posts/how-to-get-backlinks-new-website.html');
+            window.location.replace('/how-to-get-backlinks-new-website%20(1).html');
           }
         </script>`
       }}
