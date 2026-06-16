@@ -106,6 +106,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    
+{
+  url: 'https://backlinkbridge.com/blog/how-to-get-backlinks-for-new-website',
+  lastModified: new Date('2026-06-16'),
+  changeFrequency: 'monthly' as const,
+  priority: 0.8,
+},
     {
       url: `${baseUrl}/blog/improve-domain-rating-2026`,
       lastModified: new Date('2026-05-12'),
