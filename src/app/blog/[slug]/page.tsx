@@ -40,20 +40,6 @@ export default function BlogPostDetailPage({ params }: PageProps) {
 
   const content = getBlogContent(params.slug)
   
-// Serve raw HTML for specific posts
-if (params.slug === 'how-to-get-backlinks-for-new-website') {
-  return (
-    <div
-      dangerouslySetInnerHTML={{
-        __html: `<script>
-          window.onload = function() {
-            window.location.replace('/how-to-get-backlinks-new-website%20(1).html');
-          }
-        </script>`
-      }}
-    />
-  )
-}
   const blogPostSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
