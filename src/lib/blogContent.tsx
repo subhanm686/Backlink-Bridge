@@ -564,63 +564,91 @@ export const BLOG_CONTENT: BlogContent[] = [
     sections: (
       <>
         <p className="font-semibold text-navy text-lg leading-relaxed">
-          New websites face a brutal cold-start problem: Google&apos;s ranking algorithm relies heavily on backlink signals, yet most sites launch with zero referring domains. This guide covers a systematic, risk-free approach to foundational link building — starting from DR 0 — with a repeatable 60-day sprint framework.
+          New websites face a brutal cold-start problem: Google&apos;s ranking algorithm relies heavily on backlink signals, yet most sites launch with zero referring domains and no established authority. This guide covers a systematic, risk-free approach to foundational link building strategies — starting from DR 0 — including outreach mechanics, the correct DR target range for early-stage sites, and how to avoid Google&apos;s SpamBrain filters.
         </p>
+
+        <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:'16px', margin:'28px 0'}}>
+          {[
+            {num:'74%', label:'of SEO professionals say backlinks are still a top ranking factor (2026)'},
+            {num:'12×', label:'more value from 1 DR 70+ link vs 12 links from DR 20–30 sites'},
+            {num:'89%', label:'of top-ranking pages have at least one link from a DR 60+ domain'},
+            {num:'52%', label:'of SEO pros now require DR 50+ before accepting any placement'},
+          ].map((s,i) => (
+            <div key={i} style={{background:'#f8fafc', border:'1px solid #e2e8f0', borderRadius:'10px', padding:'20px 16px', textAlign:'center'}}>
+              <div style={{fontSize:'28px', fontWeight:'700', color:'#2B7FE0', lineHeight:'1'}}>{s.num}</div>
+              <div style={{fontSize:'12px', color:'#5c5c7a', marginTop:'6px', lineHeight:'1.4'}}>{s.label}</div>
+            </div>
+          ))}
+        </div>
 
         <h2 className="text-2xl font-bold text-navy font-display pt-4">Why Backlinks Still Dominate Rankings in 2026</h2>
-        <p>
-          Despite years of predictions that links would lose their influence, backlinks remain one of Google&apos;s top three ranking signals in 2026. According to Search Engine Journal, 74% of SEO professionals confirm backlinks as a primary ranking factor. What has changed is quality over quantity — Google&apos;s SpamBrain update has aggressively devalued manipulative link schemes.
-        </p>
-        <p>
-          A single contextual dofollow link from a DR 50+ site with genuine organic traffic now outperforms hundreds of low-quality directory submissions. In 2026, strong backlinks also help your content appear in AI-generated answers across Google AI Overviews, Perplexity, and ChatGPT.
-        </p>
+        <p>Despite years of predictions that links would lose their influence, backlinks remain one of Google&apos;s top three ranking signals in 2026. According to Search Engine Journal, 74% of SEO professionals confirm backlinks as a primary factor in search visibility — and this number has held steady even as AI Overviews have reshaped the SERP landscape.</p>
+        <p>What has changed is quality over quantity. Google&apos;s SpamBrain update has aggressively devalued manipulative link schemes. A single contextual link from a DR 50+ site with genuine organic traffic now outperforms hundreds of low-quality directory submissions. In 2026, strong backlinks also help your content appear in AI-generated answers across Google AI Overviews, Perplexity, and ChatGPT.</p>
 
-        <h2 className="text-2xl font-bold text-navy font-display pt-4">Understanding Domain Rating for New Websites</h2>
-        <p>
-          Domain Rating (DR) — developed by Ahrefs — measures the strength of a site&apos;s backlink profile on a logarithmic scale from 0 to 100. The practical Goldilocks Zone for new site link acquisition in 2026: target sites with DR 30–60 and at least 300–500 monthly organic visitors.
-        </p>
-        <p>
-          A DR 90 link from a ghost site with zero traffic is now effectively worthless — Google&apos;s AI systems recognise these link farms and simply ignore the signal. Studies from 2025–2026 found that 86% of guest posting sites are low quality despite high DR scores.
-        </p>
+        <h2 className="text-2xl font-bold text-navy font-display pt-4">Understanding Domain Rating (DR) for New Websites</h2>
+        <p>Domain Rating (DR) — developed by Ahrefs — measures the strength of a site&apos;s backlink profile on a logarithmic scale from 0 to 100. The practical &quot;Goldilocks Zone&quot; for new site link acquisition in 2026: target sites with DR 30–60 and at least 300–500 monthly organic visitors.</p>
+        <p>A DR 90 link from a ghost site with zero traffic is now effectively worthless — Google&apos;s AI systems recognise these link farms and ignore the signal. Studies from 2025–2026 found that 86% of guest posting sites are low quality despite high DR scores.</p>
 
-        <h2 className="text-2xl font-bold text-navy font-display pt-4">Phase 1: Foundation Building (Days 1–20)</h2>
-        <p>
-          Before pursuing editorial or guest post links, establish your brand&apos;s digital footprint through Name-Address-Phone (NAP) citations. Register your business on Google Business Profile, Bing Places, and three to five industry-specific directories. For SEO agencies, directories like Clutch.co (DR 73), DesignRush (DR 68), and G2 (DR 91) carry genuine authority and traffic.
-        </p>
-        <p>
-          Use Ahrefs&apos; Link Intersect tool to identify directories that link to three or more of your competitors but not yet to you. These are zero-resistance opportunities — they already accept sites in your niche.
-        </p>
+        <div style={{background:'#FAEEDA', borderLeft:'4px solid #BA7517', borderRadius:'0 8px 8px 0', padding:'20px 24px', margin:'28px 0'}}>
+          <div style={{fontFamily:'sans-serif', fontSize:'11px', letterSpacing:'1.5px', textTransform:'uppercase', fontWeight:'700', color:'#BA7517', marginBottom:'8px'}}>⚠ KEY RISK TO AVOID</div>
+          <p style={{margin:0, fontSize:'15px'}}>Studies from 2025–2026 found that <strong>86% of guest posting sites are low quality</strong> — they have high DR scores but fewer than 500 monthly organic visitors. Always verify organic traffic alongside DR before pursuing any placement.</p>
+        </div>
 
-        <h2 className="text-2xl font-bold text-navy font-display pt-4">Phase 2: Active Guest Post Outreach (Days 21–40)</h2>
-        <p>
-          Guest posting remains the fastest method for acquiring contextual dofollow backlinks for a new site. Research shows that emails sent from a personal address (firstname@yourdomain.com) receive 32% more opens than generic addresses like info@ or contact@. Keep your daily send volume between 30–50 emails — exceeding 100 per day significantly increases the risk of blacklisting.
-        </p>
-        <p>
-          Mentioning a specific article on the target site in your pitch increases response rates by 45% compared to generic compliments. Two to three follow-ups is optimal — more than three is perceived as spam.
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li><strong>Branded anchors:</strong> 35–45% of your anchor profile — lowest risk</li>
-          <li><strong>Naked URL anchors:</strong> 20–25% — very safe and natural</li>
-          <li><strong>Partial match anchors:</strong> 15–20% — low to medium risk</li>
-          <li><strong>Exact match anchors:</strong> Maximum 5–10% — high risk if overused</li>
-          <li><strong>Generic anchors:</strong> 10–15% — good for diversity</li>
-        </ul>
+        <h2 className="text-2xl font-bold text-navy font-display pt-4">The 60-Day Foundational Link Building Sprint</h2>
+        <p>For a brand-new domain, the fastest safe path to establishing a backlink profile follows a three-phase sprint across 60 days. The goal is not to accumulate hundreds of links — it is to build a diverse, topically relevant referring domain base that demonstrates authority to Google&apos;s crawlers.</p>
 
-        <h2 className="text-2xl font-bold text-navy font-display pt-4">Phase 3: Editorial Link Earning (Days 41–60)</h2>
-        <p>
-          The most scalable long-term source of editorial backlinks is original data and unique resources that other writers need to cite. A single well-researched data post can earn 20–50 links over 12 months with zero additional outreach cost.
-        </p>
-        <p>
-          Broken link building converts at 5–10% response rate — higher than cold guest post pitches. Unlinked brand mention reclamation converts at 15–25% — the easiest backlink you will ever earn because the site already knows you exist.
-        </p>
+        <h3 className="text-xl font-bold text-navy font-display pt-2">Phase 1: Foundation Building (Days 1–20)</h3>
+        <p>Before pursuing editorial or guest post links, establish your brand&apos;s digital footprint through Name-Address-Phone (NAP) citations. Register your business on Google Business Profile, Bing Places, and three to five industry-specific directories. For SEO agencies, directories like Clutch.co (DR 73), DesignRush (DR 68), and G2 (DR 91) carry genuine authority and traffic.</p>
+        <p>Use Ahrefs&apos; Link Intersect tool to identify directories that link to three or more of your competitors but not yet to you. These are zero-resistance opportunities — they already accept sites in your niche.</p>
+
+        <div style={{background:'#E1F5EE', borderLeft:'4px solid #0F6E56', borderRadius:'0 8px 8px 0', padding:'20px 24px', margin:'28px 0'}}>
+          <div style={{fontFamily:'sans-serif', fontSize:'11px', letterSpacing:'1.5px', textTransform:'uppercase', fontWeight:'700', color:'#0F6E56', marginBottom:'8px'}}>✓ PRO TIP</div>
+          <p style={{margin:0, fontSize:'15px'}}>Use Ahrefs&apos; &quot;Link Intersect&quot; tool to identify directories that link to three or more of your competitors but not yet to you. These are zero-resistance opportunities — they already accept sites in your niche.</p>
+        </div>
+
+        <h3 className="text-xl font-bold text-navy font-display pt-2">Phase 2: Active Guest Post Outreach (Days 21–40)</h3>
+        <p>Guest posting remains the fastest method for acquiring contextual dofollow backlinks for a new site. Research shows that emails sent from a personal address (firstname@yourdomain.com) receive 32% more opens than generic addresses. Keep your daily send volume between 30–50 emails. Mentioning a specific article on the target site increases response rates by 45%. Two to three follow-ups is optimal.</p>
+
+        <h3 className="text-xl font-bold text-navy font-display pt-2">Anchor Text Distribution Strategy</h3>
+        <div style={{overflowX:'auto', margin:'28px 0'}}>
+          <table style={{width:'100%', borderCollapse:'collapse', fontFamily:'sans-serif', fontSize:'14px'}}>
+            <thead>
+              <tr style={{background:'#0B1F3A', color:'white'}}>
+                <th style={{padding:'12px 14px', textAlign:'left'}}>Anchor Type</th>
+                <th style={{padding:'12px 14px', textAlign:'left'}}>Example</th>
+                <th style={{padding:'12px 14px', textAlign:'left'}}>Recommended Share</th>
+                <th style={{padding:'12px 14px', textAlign:'left'}}>Risk Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {type:'Branded', ex:'"BacklinkBridge"', share:'35–45%', risk:'Very Low', color:'#0F6E56'},
+                {type:'Naked URL', ex:'"backlinkbridge.com"', share:'20–25%', risk:'Very Low', color:'#0F6E56'},
+                {type:'Partial Match', ex:'"link building agency"', share:'15–20%', risk:'Low–Medium', color:'#BA7517'},
+                {type:'Exact Match', ex:'"buy backlinks"', share:'Max 5–10%', risk:'High if overused', color:'#cc3333'},
+                {type:'Generic', ex:'"click here"', share:'10–15%', risk:'Low', color:'#0F6E56'},
+              ].map((r,i) => (
+                <tr key={i} style={{background: i%2===0 ? '#f8fafc' : 'white'}}>
+                  <td style={{padding:'11px 14px', borderBottom:'1px solid #e2e8f0'}}>{r.type}</td>
+                  <td style={{padding:'11px 14px', borderBottom:'1px solid #e2e8f0'}}>{r.ex}</td>
+                  <td style={{padding:'11px 14px', borderBottom:'1px solid #e2e8f0', color:r.color, fontWeight:'600'}}>{r.share}</td>
+                  <td style={{padding:'11px 14px', borderBottom:'1px solid #e2e8f0', color:r.color, fontWeight:'600'}}>{r.risk}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-xl font-bold text-navy font-display pt-2">Phase 3: Editorial Link Earning (Days 41–60)</h3>
+        <p>The most scalable long-term source of editorial backlinks is original data and unique resources that other writers need to cite. A single well-researched data post can earn 20–50 links over 12 months with zero additional outreach cost. Broken link building converts at 5–10% response rate. Unlinked brand mention reclamation converts at 15–25% — the easiest backlink you will ever earn.</p>
+
+        <div style={{background:'#EEEDFE', borderLeft:'4px solid #534AB7', borderRadius:'0 8px 8px 0', padding:'20px 24px', margin:'28px 0'}}>
+          <div style={{fontFamily:'sans-serif', fontSize:'11px', letterSpacing:'1.5px', textTransform:'uppercase', fontWeight:'700', color:'#534AB7', marginBottom:'8px'}}>ℹ COMPETITOR ANALYSIS</div>
+          <p style={{margin:0, fontSize:'15px'}}><strong>How Semrush and Ahrefs approach this:</strong> Both platforms publish recurring data studies that attract thousands of editorial citations annually. You can replicate this at smaller scale — a focused study on link building costs for Australian SMEs positions BacklinkBridge as the citable authority in your market.</p>
+        </div>
 
         <h2 className="text-2xl font-bold text-navy font-display pt-4">Internal Linking: The Underrated Equity Multiplier</h2>
-        <p>
-          Every blog post you publish is an opportunity to pass crawl equity directly to your commercial service pages. All internal links must be clean dofollow links — no rel=&quot;nofollow&quot; on internal links. Using keyword-rich anchor text signals topical relevance to Googlebot and amplifies the equity passed by your external backlinks.
-        </p>
-        <p>
-          For a new website, a publishing cadence of 2–4 blog posts per week allows search bots to crawl and establish your core topical clusters without triggering spam filters.
-        </p>
+        <p>Every blog post you publish is an opportunity to pass crawl equity directly to your commercial service pages. All internal links must be clean dofollow links — no rel=&quot;nofollow&quot; on internal links. Using keyword-rich anchor text signals topical relevance to Googlebot and amplifies the equity passed by your external backlinks. Publish 2–4 blog posts per week to establish topical clusters without triggering spam filters.</p>
 
         <h2 className="text-2xl font-bold text-navy font-display pt-4">How to Qualify a Link Opportunity</h2>
         <ul className="list-disc pl-6 space-y-2">
@@ -636,36 +664,16 @@ export const BLOG_CONTENT: BlogContent[] = [
         </p>
 
         <h2 className="text-2xl font-bold text-navy font-display pt-4">Frequently Asked Questions</h2>
-
         <h3 className="text-xl font-bold text-navy font-display pt-2">Do backlinks still matter for SEO in 2026?</h3>
-        <p>
-          Yes. Backlinks remain one of Google&apos;s top three ranking signals. 74% of SEO professionals confirm this. One high-quality contextual dofollow link now outweighs hundreds of low-quality links.
-        </p>
-
+        <p>Yes. 74% of SEO professionals confirm backlinks as a top ranking factor. One high-quality contextual dofollow link now outweighs hundreds of low-quality links.</p>
         <h3 className="text-xl font-bold text-navy font-display pt-2">How many backlinks does a new website need to rank?</h3>
-        <p>
-          For long-tail keywords with KD under 40, a new website can rank with as few as 5–15 quality referring domains. Focus on DR 30–60 sites with real traffic rather than raw link volume.
-        </p>
-
+        <p>For long-tail keywords with KD under 40, a new website can rank with as few as 5–15 quality referring domains. Focus on DR 30–60 sites with real traffic rather than raw link volume.</p>
         <h3 className="text-xl font-bold text-navy font-display pt-2">What is the fastest way to get backlinks for a new website?</h3>
-        <p>
-          The fastest ethical method: (1) brand citations to niche directories in Days 1–20, (2) personalised guest post outreach to DR 30–50 blogs in Days 21–40, and (3) a linkable asset that earns editorial links passively in Days 41–60. This sprint typically yields 8–15 quality referring domains.
-        </p>
-
-        <h3 className="text-xl font-bold text-navy font-display pt-2">How long does it take for backlinks to improve rankings?</h3>
-        <p>
-          Backlinks typically begin showing ranking impact within 4–12 weeks. Significant movement for competitive keywords can take 3–6 months. High domain relevance and strong internal linking both speed up impact.
-        </p>
-
+        <p>Brand citations in Days 1–20, personalised guest post outreach in Days 21–40, and a linkable asset in Days 41–60. This sprint typically yields 8–15 quality referring domains.</p>
+        <h3 className="text-xl font-bold text-navy font-display pt-2">How long do backlinks take to improve rankings?</h3>
+        <p>Backlinks begin showing ranking impact within 4–12 weeks. Significant movement for competitive keywords takes 3–6 months. High domain relevance and strong internal linking both speed up impact.</p>
         <h3 className="text-xl font-bold text-navy font-display pt-2">What is the difference between dofollow and nofollow backlinks?</h3>
-        <p>
-          A dofollow backlink passes full link equity (PageRank) from the linking site to yours, directly influencing search rankings. A nofollow link instructs Google not to pass ranking equity. For a new website, prioritise dofollow backlinks from topically relevant, high-traffic sites.
-        </p>
+        <p>A dofollow backlink passes full link equity (PageRank) directly influencing search rankings. A nofollow link instructs Google not to pass ranking equity. For a new website, prioritise dofollow backlinks from topically relevant, high-traffic sites.</p>
       </>
     ),
   },
- ]
-
-export function getBlogContent(slug: string): BlogContent | undefined {
-  return BLOG_CONTENT.find((c) => c.slug === slug)
-}
