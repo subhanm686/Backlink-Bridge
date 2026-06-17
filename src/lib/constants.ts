@@ -143,6 +143,6 @@ export const BLOG_POSTS: BlogPost[] = [
       tag: "Link Building",
       readTime: "9 min read",
       date: "June 16, 2026",
-      unsplash: "/blog-domain-rating.jpg"
+      unsplash: ""
     }
   ]
