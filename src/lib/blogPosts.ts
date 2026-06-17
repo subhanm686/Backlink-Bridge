@@ -96,7 +96,19 @@ export const BLOG_POSTS: BlogPost[] = [
     imageAlt: "SEO Strategy Article: White Hat vs Black Hat Link Building: The Real Risks",
     featured: false,
   },
-];
+    {
+      slug: "how-to-get-backlinks-for-new-website",
+      title: "How to Get Backlinks for a New Website in 2026: A Proven Foundational Framework",
+      excerpt: "New websites face a brutal cold-start problem. This guide covers a systematic approach to foundational link building — covering DR targets, outreach mechanics, guest posting, and dofollow link acquisition from scratch.",
+      category: "Link Building",
+      readTime: "9 min read",
+      date: "June 16, 2026",
+      dateISO: "2026-06-16",
+      image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&h=220&q=80",
+      imageAlt: "Link Building Article: How to Get Backlinks for a New Website in 2026",
+      featured: false,
+    },
+  ];
 
 export const BLOG_CATEGORIES = [
   "All",
