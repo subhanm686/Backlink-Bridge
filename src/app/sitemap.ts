@@ -38,6 +38,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/careers`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/partners`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/free-site-audit`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -153,6 +165,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ============================================
     // RESOURCE PAGES
     // ============================================
+    {
+      url: `${baseUrl}/write-for-us`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
     {
       url: `${baseUrl}/seo-glossary`,
       lastModified: new Date(),

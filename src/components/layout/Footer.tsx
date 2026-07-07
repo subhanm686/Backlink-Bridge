@@ -50,21 +50,21 @@ export default function Footer() {
       { name: "Education", href: "/niches?filter=education" },
       { name: "View All 25+ Niches →", href: "/niches", isHighlight: true }
     ],
-   resources: [
-  { name: "Blog", href: "/blog" },
-  { name: "Free Site Audit", href: "/free-site-audit" },
-  { name: "SEO Glossary", href: "/seo-glossary" },
-  { name: "Anchor Text Guide", href: "/anchor-text-guide" },
-  { name: "DR vs DA Explained", href: "/dr-vs-da" }
-
+    resources: [
+      { name: "Blog", href: "/blog" },
+      { name: "Write for Us", href: "/write-for-us" },
+      { name: "Free Site Audit", href: "/free-site-audit" },
+      { name: "SEO Glossary", href: "/seo-glossary" },
+      { name: "Anchor Text Guide", href: "/anchor-text-guide" },
+      { name: "DR vs DA Explained", href: "/dr-vs-da" }
     ],
     company: [
       { name: "About Us", href: "/about" },
       { name: "How It Works", href: "/how-it-works" },
       { name: "Contact", href: "/contact" },
-      { name: "Partner With Us", href: "/contact" },
-      { name: "Affiliate Program", href: "/contact" },
-      { name: "Careers", href: "/contact" }
+      { name: "Partner With Us", href: "/partners" },
+      { name: "Affiliate Program", href: "/affiliates" },
+      { name: "Careers", href: "/careers" }
     ]
   }
 
@@ -211,7 +211,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center mt-16 pt-8 border-t border-white/10 text-[13px] text-slate-500 gap-4">
           <div>
-            © 2025 Backlink Bridge. All rights reserved.
+            © 2026 Backlink Bridge. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <Link href="/privacy">Privacy Policy</Link>

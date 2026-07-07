@@ -34,7 +34,21 @@ export default function Button({
 
   const classes = cn(baseStyles, variants[variant], sizes[size], className)
 
+  const isExternalLink =
+    href?.startsWith('mailto:') ||
+    href?.startsWith('tel:') ||
+    href?.startsWith('http://') ||
+    href?.startsWith('https://')
+
   if (href) {
+    if (isExternalLink) {
+      return (
+        <a href={href} className={classes}>
+          {children}
+        </a>
+      )
+    }
+
     return (
       <Link href={href} className={classes}>
         {children}

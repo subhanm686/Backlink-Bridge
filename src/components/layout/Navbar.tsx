@@ -75,10 +75,11 @@ export default function Navbar() {
 
   const resources = [
     { name: "Blog", href: "/blog" },
+    { name: "Write for Us", href: "/write-for-us" },
     { name: "Free Site Audit", href: "/free-site-audit" },
-  { name: "SEO Glossary", href: "/seo-glossary" },
+    { name: "SEO Glossary", href: "/seo-glossary" },
     { name: "Anchor Text Guide", href: "/anchor-text-guide" },
-{ name: "DR vs DA Explained", href: "/dr-vs-da" }
+    { name: "DR vs DA Explained", href: "/dr-vs-da" }
   ]
 
  const company = [
@@ -86,8 +87,8 @@ export default function Navbar() {
   { name: "Case Studies", href: "/case-studies" },
   { name: "Pricing", href: "/pricing" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Partner With Us", href: "/contact" },
-  { name: "Affiliate Program", href: "/contact" }
+  { name: "Partner With Us", href: "/partners" },
+  { name: "Affiliate Program", href: "/affiliates" }
 ]
 
   return (

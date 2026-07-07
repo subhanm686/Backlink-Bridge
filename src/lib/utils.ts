@@ -79,6 +79,9 @@ const PHOTO_MAPPING: { [key: string]: string } = {
 
   // Steps
   "person laptop form website professional": "photo-1501504905252-473c47e087f8",
+  "person laptop signup form professional": "photo-1501504905252-473c47e087f8",
+  "social media marketing share content professional": "photo-1432888498266-38ffec3eaf0a",
+  "payment commission earnings finance professional": "photo-1579621970563-ebec7560ff3e",
   "research team reviewing data spreadsheet": "photo-1519389950473-47ba0277781c",
   "writer working desk coffee writing professional": "photo-1516962215378-7fa2e137ae93",
   "analytics dashboard monitor growth results": "photo-1460925895917-afdab827c52f",
